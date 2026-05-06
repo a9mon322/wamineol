@@ -130,6 +130,7 @@ export const CLASSES: WowClass[] = [
     specs: [
       { slug: "havoc", name: "파멸", role: "딜러" },
       { slug: "vengeance", name: "복수", role: "탱커" },
+      { slug: "predation", name: "포식", role: "딜러" },
     ],
   },
   {
