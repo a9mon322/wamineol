@@ -2,7 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CLASSES, SECTIONS, getClass, getSpec } from "@/data/classes";
 import { getTalentBuilds, type TalentBuildSection } from "@/data/talent-builds";
+import { getBisBuild } from "@/data/bis-items";
 import TalentBuildCard from "@/components/TalentBuildCard";
+import BisBuildCard from "@/components/BisBuildCard";
 import { createClient } from "@/lib/supabase/server";
 
 export const revalidate = 0;
@@ -109,7 +111,10 @@ export default async function SpecPage({
                   section.slug as TalentBuildSection
                 )
               : [];
-          const hasContent = builds.length > 0 || !!guide?.content;
+          const bisBuild =
+            section.slug === "bis" ? getBisBuild(classSlug, specSlug) : null;
+          const hasContent =
+            builds.length > 0 || !!guide?.content || !!bisBuild;
 
           return (
             <section
@@ -139,6 +144,17 @@ export default async function SpecPage({
                       <TalentBuildCard key={b.heroTalentSlug} build={b} />
                     ))}
                   </div>
+                </div>
+              )}
+
+              {bisBuild && (
+                <div className="mt-4">
+                  <BisBuildCard
+                    build={bisBuild}
+                    classSlug={classSlug}
+                    specSlug={specSlug}
+                    classColor={cls.color}
+                  />
                 </div>
               )}
 

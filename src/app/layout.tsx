@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -40,6 +41,13 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script id="wowhead-tooltips" strategy="afterInteractive">
+          {`window.whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: true };`}
+        </Script>
+        <Script
+          src="https://wow.zamimg.com/js/tooltips.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
