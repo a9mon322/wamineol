@@ -76,7 +76,7 @@ export default function Home() {
           <p className="text-3xl">📚</p>
           <h3 className="mt-2 font-bold">직업별 공략</h3>
           <p className="mt-1 text-sm text-muted">
-            13개 직업, 39개 전문화의 쐐기·레이드·특성·BIS·도핑까지 한 곳에서.
+            13개 직업, 39개 전문화의 쐐기·레이드·BIS·도핑까지 한 곳에서.
           </p>
         </div>
         <div className="rounded-lg border border-border bg-surface p-6">

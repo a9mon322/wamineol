@@ -35,7 +35,7 @@ export default async function AdminDashboard() {
           <p className="text-2xl">📚</p>
           <h2 className="mt-2 font-bold">직업 공략 작성</h2>
           <p className="mt-1 text-sm text-muted">
-            13직업 × 39전문화 × 5섹션 (쐐기·레이드·특성·BIS·도핑) 콘텐츠 관리
+            13직업 × 39전문화 × 4섹션 (쐐기·레이드·BIS·도핑) 콘텐츠 관리
           </p>
         </Link>
         <Link

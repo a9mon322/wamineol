@@ -51,7 +51,7 @@ export default async function ClassPage({
           </h1>
         </div>
         <p className="mt-3 text-muted">
-          전문화를 선택하면 쐐기·레이드·특성·BIS·도핑 정보를 볼 수 있습니다.
+          전문화를 선택하면 쐐기·레이드·BIS·도핑 정보를 볼 수 있습니다.
         </p>
       </header>
 
@@ -74,7 +74,7 @@ export default async function ClassPage({
               </span>
             </div>
             <p className="mt-2 text-sm text-muted">
-              쐐기 · 레이드 · 특성 · BIS · 도핑
+              쐐기 · 레이드 · BIS · 도핑
             </p>
             <p className="mt-4 text-sm text-accent opacity-0 transition-opacity group-hover:opacity-100">
               자세히 보기 →

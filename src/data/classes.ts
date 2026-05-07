@@ -148,7 +148,6 @@ export const CLASSES: WowClass[] = [
 export const SECTIONS = [
   { slug: "mythic-plus", name: "쐐기 던전" },
   { slug: "raid", name: "레이드" },
-  { slug: "talents", name: "특성" },
   { slug: "bis", name: "BIS 아이템" },
   { slug: "consumables", name: "마법부여·도핑" },
 ] as const;

@@ -12,7 +12,7 @@ export default function ClassesPage() {
       <header className="mb-10">
         <h1 className="text-3xl font-bold md:text-4xl">직업 공략</h1>
         <p className="mt-2 text-muted">
-          직업을 골라 전문화별 쐐기·레이드·특성·BIS·도핑 정보를 확인하세요.
+          직업을 골라 전문화별 쐐기·레이드·BIS·도핑 정보를 확인하세요.
         </p>
       </header>
 

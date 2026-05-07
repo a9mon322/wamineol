@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CLASSES, SECTIONS, getClass, getSpec } from "@/data/classes";
+import { getTalentBuilds, type TalentBuildSection } from "@/data/talent-builds";
+import TalentBuildCard from "@/components/TalentBuildCard";
 import { createClient } from "@/lib/supabase/server";
 
 export const revalidate = 0;
@@ -22,7 +24,7 @@ export async function generateMetadata({
   if (!cls || !spec) return {};
   return {
     title: `${cls.name} ${spec.name} 공략 | 와미널`,
-    description: `${cls.name} ${spec.name} 쐐기·레이드·특성·BIS·도핑 한국어 공략`,
+    description: `${cls.name} ${spec.name} 쐐기·레이드·BIS·도핑 한국어 공략`,
   };
 }
 
@@ -99,6 +101,16 @@ export default async function SpecPage({
       <div className="space-y-8">
         {SECTIONS.map((section) => {
           const guide = contentMap.get(section.slug);
+          const builds =
+            section.slug === "mythic-plus" || section.slug === "raid"
+              ? getTalentBuilds(
+                  classSlug,
+                  specSlug,
+                  section.slug as TalentBuildSection
+                )
+              : [];
+          const hasContent = builds.length > 0 || !!guide?.content;
+
           return (
             <section
               key={section.slug}
@@ -116,15 +128,31 @@ export default async function SpecPage({
                   </span>
                 )}
               </div>
+
+              {builds.length > 0 && (
+                <div className="mt-4">
+                  <h3 className="mb-3 text-sm font-bold text-muted">
+                    추천 특성 빌드
+                  </h3>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    {builds.map((b) => (
+                      <TalentBuildCard key={b.heroTalentSlug} build={b} />
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="mt-4">
                 {guide?.content ? (
                   <div className="whitespace-pre-wrap leading-7 text-foreground/90">
                     {guide.content}
                   </div>
                 ) : (
-                  <p className="italic text-muted">
-                    아직 공략이 작성되지 않았습니다. 곧 업데이트 예정.
-                  </p>
+                  !hasContent && (
+                    <p className="italic text-muted">
+                      아직 공략이 작성되지 않았습니다. 곧 업데이트 예정.
+                    </p>
+                  )
                 )}
               </div>
             </section>
