@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import {
+  getBisItemColor,
   getBisItemDisplayName,
   getBisSourceDisplay,
   getWowheadIconUrl,
@@ -81,6 +82,8 @@ export default function TrinketTabs({
                   <img
                     src={iconUrl}
                     alt=""
+                    width={48}
+                    height={48}
                     className="h-12 w-12 flex-shrink-0 rounded border border-border"
                   />
                 ) : (
@@ -95,7 +98,10 @@ export default function TrinketTabs({
                         {trinket.tier}
                       </span>
                     )}
-                    <div className="truncate font-semibold text-foreground group-hover:text-accent">
+                    <div
+                      className="truncate font-semibold"
+                      style={{ color: getBisItemColor(trinket) }}
+                    >
                       {getBisItemDisplayName(trinket)}
                     </div>
                   </div>

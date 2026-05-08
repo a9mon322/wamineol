@@ -6,6 +6,7 @@ import {
   BIS_SLOT_LABELS,
   BIS_SLOT_ORDER,
   getBisBuild,
+  getBisItemColor,
   getBisItemDisplayName,
   getBisSourceDisplay,
   getWowheadIconUrl,
@@ -146,7 +147,8 @@ export default async function BisDetailPage({
                         href={getWowheadItemUrl(item)}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-semibold text-foreground hover:text-accent"
+                        className="font-semibold hover:underline"
+                        style={{ color: getBisItemColor(item) }}
                       >
                         {getBisItemDisplayName(item)}
                       </a>

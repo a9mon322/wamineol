@@ -42,7 +42,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <Script id="wowhead-tooltips" strategy="afterInteractive">
-          {`window.whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: true };`}
+          {`window.whTooltips = { colorLinks: true, iconizeLinks: false, renameLinks: false };`}
         </Script>
         <Script
           src="https://wow.zamimg.com/js/tooltips.js"

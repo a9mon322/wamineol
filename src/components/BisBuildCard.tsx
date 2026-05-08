@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {
   BIS_SLOT_LABELS,
+  getBisItemColor,
   getBisItemDisplayName,
   getWowheadIconUrl,
   type BisBuild,
@@ -85,7 +86,10 @@ export default function BisBuildCard({
                   <div className="text-xs text-muted">
                     {BIS_SLOT_LABELS[slot]}
                   </div>
-                  <div className="truncate text-sm font-semibold text-foreground">
+                  <div
+                    className="truncate text-sm font-semibold"
+                    style={item ? { color: getBisItemColor(item) } : undefined}
+                  >
                     {item ? getBisItemDisplayName(item) : "-"}
                   </div>
                 </div>
