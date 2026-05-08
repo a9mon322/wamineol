@@ -162,6 +162,132 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxY0wMDLzMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
     imageUrl: "/talent-builds/전사-방어-산왕-레이드.png",
   },
+
+  // ── 성기사 / 보호 ────────────────────────────
+  {
+    classSlug: "paladin",
+    specSlug: "protection",
+    sectionSlug: "mythic-plus",
+    heroTalentSlug: "lightsmith",
+    heroTalentName: "빛의 대장장이",
+    accentColor: "#F0E68C",
+    description: "",
+    importCode:
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsNjBzyYZMjZmZZZMzwsMLDDAwAAAAAAgmmZWmZMzMGmt2AwADYGsBAAAAzMbbLtMzYxMYAAzwYAwMDAmZAD",
+    imageUrl: "/talent-builds/성기사-보호-빛의 대장장이-쐐기.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "protection",
+    sectionSlug: "mythic-plus",
+    heroTalentSlug: "templar",
+    heroTalentName: "기사단",
+    accentColor: "#E6CC80",
+    description: "",
+    importCode:
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsNjBzyYZMjZmZZZMzwsMbDDAwAAAAAAgmmZWmZMzMGs1GAGYADsBAAmZabmZbGAgNzwMAGjZYMAALzAMzAG",
+    imageUrl: "/talent-builds/성기사-보호-기사단-쐐기.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "protection",
+    sectionSlug: "raid",
+    heroTalentSlug: "lightsmith",
+    heroTalentName: "빛의 대장장이",
+    accentColor: "#F0E68C",
+    description: "",
+    importCode:
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsZGzYWGLzDMjZmZbZMGzsYZYAAGAAAAAA00MjZGzMjhZrNAMAwMYDAAAAmZW2WaZmxCYGADmhxAgZGAMzAG",
+    imageUrl: "/talent-builds/성기사-보호-빛의 대장장이-레이드.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "protection",
+    sectionSlug: "raid",
+    heroTalentSlug: "templar",
+    heroTalentName: "기사단",
+    accentColor: "#E6CC80",
+    description: "",
+    importCode:
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsZGDzyYZmZMzMLLjxYmFLzYAAGAAAAAA00MziZMzwwsFAMwAGYDAAMz02MzyMAAbMMDAGzwYAAWmBYmBMA",
+    imageUrl: "/talent-builds/성기사-보호-기사단-레이드.png",
+  },
+
+  // ── 성기사 / 신성 ────────────────────────────
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    sectionSlug: "mythic-plus",
+    heroTalentSlug: "lightsmith",
+    heroTalentName: "빛의 대장장이",
+    accentColor: "#F0E68C",
+    description: "",
+    importCode:
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAMLAgZAAGsMmhZGzMzGjx4BWGbzMLmpJGzYmZYY2yAwAwGYjFzMAAAwMzy2ilZG2YbYwGwMGDAMzAwMGjGA",
+    imageUrl: "/talent-builds/성기사-신성-빛의 대장장이-쐐기.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    sectionSlug: "mythic-plus",
+    heroTalentSlug: "herald-of-the-sun",
+    heroTalentName: "태양의 사자",
+    accentColor: "#FFB800",
+    description: "",
+    importCode:
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAMLAgZAAglxMYmlZmZxYGDLjtZmFzkYWmxMzMGmtMAMghNwGLzYmlZbmZ2aAAAAWYhHA2AmxMYAAMzgxYYA",
+    imageUrl: "/talent-builds/성기사-신성-태양의 사자-쐐기.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    sectionSlug: "raid",
+    heroTalentSlug: "lightsmith",
+    heroTalentName: "빛의 대장장이",
+    accentColor: "#F0E68C",
+    description: "",
+    importCode:
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAAsMmhZGzMzGDGz2YbmZxIxwYmZYY2yAwAwGYjlZmBAAAmZ22WsMzwGbMD2MMmxgBgZGAmxY0A",
+    imageUrl: "/talent-builds/성기사-신성-빛의 대장장이-레이드.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    sectionSlug: "raid",
+    heroTalentSlug: "herald-of-the-sun",
+    heroTalentName: "태양의 사자",
+    accentColor: "#FFB800",
+    description: "",
+    importCode:
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAAsMmZmZGzMzCMmxyYzMLGNxsMjZmhhZLDADAbgNz2MzMLz2Mzs1AAAAswGgNYMMzYAAYmhZMGGA",
+    imageUrl: "/talent-builds/성기사-신성-태양의 사자-레이드.png",
+  },
+
+  // ── 성기사 / 징벌 ────────────────────────────
+  {
+    classSlug: "paladin",
+    specSlug: "retribution",
+    sectionSlug: "mythic-plus",
+    heroTalentSlug: "templar",
+    heroTalentName: "기사단",
+    accentColor: "#E6CC80",
+    description: "",
+    importCode:
+      "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMGzMAAAAAAmpMLzwMjthZbYmtZMGjhZsxGAAAzMtMzsNDAYDwAgxMmBmZmZ2wyMYYMMYA",
+    imageUrl: "/talent-builds/성기사-징벌-기사단-쐐기.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "retribution",
+    sectionSlug: "raid",
+    heroTalentSlug: "templar",
+    heroTalentName: "기사단",
+    accentColor: "#E6CC80",
+    description: "",
+    importCode:
+      "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmZmBAAAAAwMlxMMzYbY2GmZbGjxYYGbsBAAwMTbzMbzAA2AMAYMDzgZMzshlZwwYGDG",
+    imageUrl: "/talent-builds/성기사-징벌-기사단-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(

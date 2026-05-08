@@ -81,12 +81,52 @@ export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
   244029: "무기 마법부여 - 렌도레이의 명민함",
   244021: "어깨보호구 마법부여 - 실버문의 치유",
   243983: "장화 마법부여 - 샬라드라실의 뿌리",
+  244008: "장화 마법부여 - 원정순찰대의 추적",
+  244016: "반지 마법부여 - 실버문의 끈기",
 };
 
 // spellId → 한국어. itemId가 없는 캐스팅 전용 마법부여용.
 export const ENCHANT_SPELL_TRANSLATIONS: Record<number, string> = {};
 
 export const ENCHANT_BUILDS: EnchantBuild[] = [
+  {
+    classSlug: "paladin",
+    specSlug: "protection",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Blood Knight's Armor Kit",
+        itemId: 244642,
+        iconName: "inv_12_profession_leatherworking_thalassian_amor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Farstrider's Hunt",
+        itemId: 244008,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Silvermoon's Tenacity",
+        itemId: 244016,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
   {
     classSlug: "warrior",
     specSlug: "protection",
