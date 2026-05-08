@@ -99,6 +99,13 @@ export const ITEM_TRANSLATIONS: Record<number, string> = {
   249344: "빛의 부대기",
   193701: "알게타르 수수께끼 상자",
   252420: "태양섬광 분광경",
+  249277: "벨라미의 마지막 심판",
+  237847: "혈기사의 자극",
+  250247: "심연의 찬가의 아뮬렛",
+  258575: "강도 높은 미늘 큰망토",
+  151332: "공허발톱 건틀릿",
+  249954: "밤의 종결자의 철갑장화",
+  193708: "백금 별의 고리",
 };
 
 // 와우 아이템 등급 색상. 와우헤드 스크립트가 hydration 후 늦게 색칠하면 깜빡임이 보여
@@ -117,6 +124,9 @@ export const RARITY_COLORS: Record<ItemRarity, string> = {
 export const ITEM_RARITY: Record<number, ItemRarity> = {
   251081: "rare", // 잿불숲 손아귀
   251217: "rare", // 공허의 맞물림
+  151332: "rare", // Voidclaw Gauntlets
+  258575: "rare", // Rigid Scale Greatcloak
+  252420: "rare", // Solarflare Prism
 };
 
 export function getBisItemColor(item: { itemId?: number }): string {
@@ -139,6 +149,7 @@ export const SOURCE_TRANSLATIONS: Record<string, string> = {
   "Nexus-Point Xenas (Dungeon)": "공결탑 제나스 (던전)",
   "Algeth'ar Academy (Dungeon)": "알게타르 대학 (던전)",
   "Skyreach (Dungeon)": "하늘탑 (던전)",
+  "Seat of the Triumvirate (Dungeon)": "삼두정의 권좌 (던전)",
   "Crafted (Tailoring)": "제작",
   "Crafted (Blacksmithing)": "제작",
   "Matrix Catalyst": "촉매",
@@ -300,6 +311,172 @@ export const BIS_BUILDS: BisBuild[] = [
         iconName: "inv_enchant_shardbrilliantlarge",
         source: "Skyreach (Dungeon)",
         tier: "S",
+      },
+    ],
+  },
+  // ── 전사 / 분노 ────────────────────────────
+  {
+    classSlug: "warrior",
+    specSlug: "fury",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "head",
+        itemName: "Night Ender's Tusks",
+        itemId: 249952,
+        iconName: "inv_helm_plate_raidwarriormidnight_d_01",
+        source: "The Voidspire (Raid) - Lightblinded Vanguard",
+      },
+      {
+        slot: "neck",
+        itemName: "Amulet of the Abyssal Hymn",
+        itemId: 250247,
+        iconName: "inv_12_jewelry_devouringhost_necklace_bronze2",
+        source: "March on Quel'Danas (Raid) - Midnight Falls",
+      },
+      {
+        slot: "shoulders",
+        itemName: "Night Ender's Pauldrons",
+        itemId: 249950,
+        iconName: "inv_shoulder_plate_raidwarriormidnight_d_01",
+        source: "The Voidspire (Raid) - Fallen-King Salhadaar",
+      },
+      {
+        slot: "back",
+        itemName: "Rigid Scale Greatcloak",
+        itemId: 258575,
+        iconName: "inv_cape_draenordungeon_c_02_plate",
+        source: "Skyreach (Dungeon)",
+      },
+      {
+        slot: "chest",
+        itemName: "Night Ender's Breastplate",
+        itemId: 249955,
+        iconName: "inv_chest_plate_raidwarriormidnight_d_01",
+        source: "The Dreamrift (Raid) - Chimaerus",
+      },
+      {
+        slot: "wrist",
+        itemName: "Spellbreaker's Bracers",
+        itemId: 237834,
+        iconName: "inv_plate_questbloodelf_b_01_bracer",
+        source: "Crafted (Blacksmithing)",
+      },
+      {
+        slot: "hands",
+        itemName: "Voidclaw Gauntlets",
+        itemId: 151332,
+        iconName: "inv_glove_plate_legiondungeon_c_03",
+        source: "Seat of the Triumvirate (Dungeon)",
+      },
+      {
+        slot: "waist",
+        itemName: "Night Ender's Girdle",
+        itemId: 249949,
+        iconName: "inv_belt_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "legs",
+        itemName: "Night Ender's Chausses",
+        itemId: 249951,
+        iconName: "inv_pant_plate_raidwarriormidnight_d_01",
+        source: "The Voidspire (Raid) - Vaelgor and Ezzorak",
+      },
+      {
+        slot: "feet",
+        itemName: "Night Ender's Greatboots",
+        itemId: 249954,
+        iconName: "inv_boot_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "ring1",
+        itemName: "Eye of Midnight",
+        itemId: 249920,
+        iconName: "inv_12_jewelry_devouringhost_ring_bronze",
+        source: "March on Quel'Danas (Raid) - Midnight Falls",
+      },
+      {
+        slot: "ring2",
+        itemName: "Platinum Star Band",
+        itemId: 193708,
+        iconName: "inv_10_dungeonjewelry_explorer_ring_1_color1",
+        source: "Algeth'ar Academy (Dungeon)",
+      },
+      {
+        slot: "main-hand",
+        itemName: "Bellamy's Final Judgement",
+        itemId: 249277,
+        iconName: "inv_mace_2h_raidmidnight_d_01",
+        source: "The Voidspire (Raid) - Lightblinded Vanguard",
+        note: "주무기 (양손 둔기)",
+      },
+      {
+        slot: "off-hand",
+        itemName: "Blood Knight's Impetus",
+        itemId: 237847,
+        iconName: "inv_polearm_2h_questbloodelf_b_01",
+        source: "Crafted (Blacksmithing)",
+        note: "보조 무기 (제작)",
+      },
+    ],
+    trinkets: [
+      {
+        contentType: "raid",
+        itemName: "Gaze of the Alnseer",
+        itemId: 249343,
+        iconName: "inv_12_trinket_raid_dreamrift_gazeofthealnseer",
+        source: "The Dreamrift (Raid) - Chimaerus",
+        tier: "S",
+      },
+      {
+        contentType: "raid",
+        itemName: "Heart of Ancient Hunger",
+        itemId: 249342,
+        iconName: "inv_12_trinket_raid_voidspire_strdps_hearthofancienthunger",
+        source: "The Voidspire (Raid) - Vorasius",
+        tier: "S",
+      },
+      {
+        contentType: "raid",
+        itemName: "Umbral Plume",
+        itemId: 260235,
+        iconName: "inv_12_dualityphoenix_void_feather",
+        source: "쿠엘다나스 진격로 (레이드) - 알라르 자손 벨로렌",
+        tier: "A",
+      },
+      {
+        contentType: "raid",
+        itemName: "Radiant Plume",
+        itemId: 249806,
+        iconName: "inv_12_dualityphoenix_holy_feather",
+        source: "쿠엘다나스 진격로 (레이드) - 알라르 자손 벨로렌",
+        tier: "A",
+      },
+      {
+        contentType: "raid",
+        itemName: "Light Company Guidon",
+        itemId: 249344,
+        iconName: "inv_12_trinket_raid_voidspire_physdps1_armyoflightbanner",
+        source: "공허첨탑 (레이드) - 전제군주 아베르지안",
+        tier: "A",
+      },
+      {
+        contentType: "mythic-plus",
+        itemName: "Algeth'ar Puzzle Box",
+        itemId: 193701,
+        iconName: "inv_misc_enggizmos_18",
+        source: "Algeth'ar Academy (Dungeon)",
+        tier: "S",
+      },
+      {
+        contentType: "mythic-plus",
+        itemName: "Solarflare Prism",
+        itemId: 252420,
+        iconName: "inv_enchant_shardbrilliantlarge",
+        source: "Skyreach (Dungeon)",
+        tier: "A",
       },
     ],
   },

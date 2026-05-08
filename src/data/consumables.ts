@@ -47,6 +47,7 @@ export type ConsumableBuild = {
 // itemId → 한국어. 동일 도핑이 여러 직업에 재사용되므로 한 곳에 모아둠.
 export const CONSUMABLE_TRANSLATIONS: Record<number, string> = {
   241326: "무너진 태양의 영약",
+  241322: "마법학자의 영약",
   241288: "무모함의 물약",
   241305: "실버문 생명력 물약",
   255846: "하란다르 기념상",
@@ -58,6 +59,7 @@ export const CONSUMABLE_TRANSLATIONS: Record<number, string> = {
 // itemId → 등급. 등급별 색상 표시용. 등록 안 된 도핑은 기본값(rare)으로 처리.
 export const CONSUMABLE_RARITY: Record<number, ItemRarity> = {
   241326: "common",   // Flask of the Shattered Sun
+  241322: "common",   // Flask of the Magisters
   241288: "common",   // Potion of Recklessness
   241305: "common",   // Silvermoon Health Potion
   255846: "rare",     // Harandar Celebration
@@ -67,6 +69,56 @@ export const CONSUMABLE_RARITY: Record<number, ItemRarity> = {
 };
 
 export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
+  {
+    classSlug: "warrior",
+    specSlug: "fury",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Magisters",
+        itemId: 241322,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_black",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Potion of Recklessness",
+        itemId: 241288,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241305,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243733,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+        note: "양 무기 적용",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
   {
     classSlug: "warrior",
     specSlug: "arms",

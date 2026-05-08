@@ -70,7 +70,9 @@ export function getEnchantColor(item: { itemId?: number }): string {
 // itemId → 한국어. BIS와 동일하게 동일 마법부여가 여러 직업에 재사용되므로 한 곳에 모아둠.
 export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
   243973: "무기 마법부여 - 광전사의 분노",
+  244031: "무기 마법부여 - 비전 숙련",
   243950: "투구 마법부여 - 강화된 생기흡수의 사술",
+  243962: "어깨보호구 마법부여 - 아킬존의 신속함",
   243991: "어깨보호구 마법부여 - 아미드랏실의 은혜",
   243977: "가슴보호구 마법부여 - 세계혼의 징표",
   244642: "혈기사의 방어구 강화도구",
@@ -82,6 +84,57 @@ export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
 export const ENCHANT_SPELL_TRANSLATIONS: Record<number, string> = {};
 
 export const ENCHANT_BUILDS: EnchantBuild[] = [
+  {
+    classSlug: "warrior",
+    specSlug: "fury",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Arcane Mastery",
+        itemId: 244031,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+        note: "양 무기 동일 적용",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Grace",
+        itemId: 243991,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Blood Knight's Armor Kit",
+        itemId: 244642,
+        iconName: "inv_12_profession_leatherworking_thalassian_amor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Dexterity",
+        itemId: 243952,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243956,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
   {
     classSlug: "warrior",
     specSlug: "arms",
