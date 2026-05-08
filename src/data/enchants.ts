@@ -83,12 +83,118 @@ export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
   243983: "장화 마법부여 - 샬라드라실의 뿌리",
   244008: "장화 마법부여 - 원정순찰대의 추적",
   244016: "반지 마법부여 - 실버문의 끈기",
+  244002: "가슴보호구 마법부여 - 마법학자의 징표",
+  240155: "비전매듭 마법실타래",
+  243959: "반지 마법부여 - 줄진의 특화",
+  244007: "투구 마법부여 - 강화된 광역회피의 룬",
+  243990: "어깨보호구 마법부여 - 아미드랏실의 은혜",
+  244640: "숲 사냥꾼의 방어구 강화도구",
 };
 
 // spellId → 한국어. itemId가 없는 캐스팅 전용 마법부여용.
 export const ENCHANT_SPELL_TRANSLATIONS: Record<number, string> = {};
 
 export const ENCHANT_BUILDS: EnchantBuild[] = [
+  {
+    classSlug: "paladin",
+    specSlug: "retribution",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Rune of Avoidance",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Grace",
+        itemId: 243990,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Dexterity",
+        itemId: 243952,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243956,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Mending",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Magister",
+        itemId: 244002,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Arcanoweave Spellthread",
+        itemId: 240155,
+        iconName: "inv_12_tailoring_spellthread_violet_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Zul'jin's Mastery",
+        itemId: 243959,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
   {
     classSlug: "paladin",
     specSlug: "protection",

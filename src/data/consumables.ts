@@ -56,6 +56,8 @@ export const CONSUMABLE_TRANSLATIONS: Record<number, string> = {
   259085: "공허에 물든 증강의 룬",
   241308: "빛의 잠재력",
   242274: "용사의 도시락",
+  241301: "빛주입 마나 물약",
+  242747: "든든한 왕실 구이",
 };
 
 // itemId → 등급. 등급별 색상 표시용. 등록 안 된 도핑은 기본값(rare)으로 처리.
@@ -70,9 +72,97 @@ export const CONSUMABLE_RARITY: Record<number, ItemRarity> = {
   259085: "rare",     // Void-Touched Augment Rune
   241308: "common",   // Light's Potential
   242274: "rare",     // Champion's Bento
+  241301: "common",   // Lightfused Mana Potion
+  242747: "rare",     // Hearty Royal Roast
 };
 
 export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
+  {
+    classSlug: "paladin",
+    specSlug: "retribution",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Magisters",
+        itemId: 241322,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_black",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Light's Potential",
+        itemId: 241308,
+        iconName: "inv_12_profession_alchemy_lightpotion_yellow",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241305,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243733,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "holy",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Magisters",
+        itemId: 241322,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_black",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Lightfused Mana Potion",
+        itemId: 241301,
+        iconName: "inv_12_profession_alchemy_lightpotion_blue",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241305,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "food",
+        itemName: "Hearty Royal Roast",
+        itemId: 242747,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243733,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
   {
     classSlug: "paladin",
     specSlug: "protection",
