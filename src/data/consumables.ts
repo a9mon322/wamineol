@@ -1,0 +1,147 @@
+import { RARITY_COLORS, type ItemRarity } from "./bis-items";
+
+export type ConsumableCategory =
+  | "flask"
+  | "combat-potion"
+  | "healing-potion"
+  | "feast"
+  | "food"
+  | "weapon-oil"
+  | "augment-rune";
+
+export const CONSUMABLE_CATEGORY_ORDER: ConsumableCategory[] = [
+  "flask",
+  "combat-potion",
+  "healing-potion",
+  "feast",
+  "food",
+  "weapon-oil",
+  "augment-rune",
+];
+
+export const CONSUMABLE_CATEGORY_LABELS: Record<ConsumableCategory, string> = {
+  "flask": "플라스크",
+  "combat-potion": "전투 물약",
+  "healing-potion": "회복 물약",
+  "feast": "잔치",
+  "food": "개인 음식",
+  "weapon-oil": "무기 오일",
+  "augment-rune": "증강 룬",
+};
+
+export type ConsumableRecommendation = {
+  category: ConsumableCategory;
+  itemName: string;
+  itemId?: number;
+  iconName?: string;
+  note?: string;
+};
+
+export type ConsumableBuild = {
+  classSlug: string;
+  specSlug: string;
+  patchVersion?: string;
+  items: ConsumableRecommendation[];
+};
+
+// itemId → 한국어. 동일 도핑이 여러 직업에 재사용되므로 한 곳에 모아둠.
+export const CONSUMABLE_TRANSLATIONS: Record<number, string> = {
+  241326: "무너진 태양의 영약",
+  241288: "무모함의 물약",
+  241305: "실버문 생명력 물약",
+  255846: "하란다르 기념상",
+  242275: "왕실 구이",
+  243733: "탈라시안 불사조 기름",
+  259085: "공허에 물든 증강의 룬",
+};
+
+// itemId → 등급. 등급별 색상 표시용. 등록 안 된 도핑은 기본값(rare)으로 처리.
+export const CONSUMABLE_RARITY: Record<number, ItemRarity> = {
+  241326: "common",   // Flask of the Shattered Sun
+  241288: "common",   // Potion of Recklessness
+  241305: "common",   // Silvermoon Health Potion
+  255846: "rare",     // Harandar Celebration
+  242275: "rare",     // Royal Roast
+  243733: "uncommon", // Thalassian Phoenix Oil
+  259085: "rare",     // Void-Touched Augment Rune
+};
+
+export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
+  {
+    classSlug: "warrior",
+    specSlug: "arms",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Shattered Sun",
+        itemId: 241326,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Potion of Recklessness",
+        itemId: 241288,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241305,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243733,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+];
+
+export function getConsumableBuild(classSlug: string, specSlug: string) {
+  return CONSUMABLE_BUILDS.find(
+    (b) => b.classSlug === classSlug && b.specSlug === specSlug
+  );
+}
+
+export function getConsumableDisplayName(item: {
+  itemId?: number;
+  itemName: string;
+}) {
+  if (item.itemId && CONSUMABLE_TRANSLATIONS[item.itemId]) {
+    return CONSUMABLE_TRANSLATIONS[item.itemId];
+  }
+  return item.itemName;
+}
+
+export function getConsumableColor(item: { itemId?: number }): string {
+  if (item.itemId && CONSUMABLE_RARITY[item.itemId]) {
+    return RARITY_COLORS[CONSUMABLE_RARITY[item.itemId]];
+  }
+  return RARITY_COLORS.rare;
+}
+
+export function getWowheadConsumableUrl(item: { itemId?: number; itemName: string }) {
+  if (item.itemId) return `https://www.wowhead.com/ko/item=${item.itemId}`;
+  return `https://www.wowhead.com/ko/items?filter=name=${encodeURIComponent(item.itemName)}`;
+}

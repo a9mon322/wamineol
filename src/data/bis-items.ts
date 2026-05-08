@@ -103,9 +103,11 @@ export const ITEM_TRANSLATIONS: Record<number, string> = {
 
 // 와우 아이템 등급 색상. 와우헤드 스크립트가 hydration 후 늦게 색칠하면 깜빡임이 보여
 // SSR 시점에 우리가 직접 inline style로 적용한다.
-export type ItemRarity = "rare" | "epic" | "legendary";
+export type ItemRarity = "common" | "uncommon" | "rare" | "epic" | "legendary";
 
 export const RARITY_COLORS: Record<ItemRarity, string> = {
+  common: "#ffffff",
+  uncommon: "#1eff00",
   rare: "#0070dd",
   epic: "#a335ee",
   legendary: "#ff8000",

@@ -3,8 +3,12 @@ import { notFound } from "next/navigation";
 import { CLASSES, SECTIONS, getClass, getSpec } from "@/data/classes";
 import { getTalentBuilds, type TalentBuildSection } from "@/data/talent-builds";
 import { getBisBuild } from "@/data/bis-items";
+import { getEnchantBuild } from "@/data/enchants";
+import { getConsumableBuild } from "@/data/consumables";
 import TalentBuildCard from "@/components/TalentBuildCard";
 import BisBuildCard from "@/components/BisBuildCard";
+import EnchantBuildCard from "@/components/EnchantBuildCard";
+import ConsumableBuildCard from "@/components/ConsumableBuildCard";
 import { createClient } from "@/lib/supabase/server";
 
 export const revalidate = 0;
@@ -113,8 +117,20 @@ export default async function SpecPage({
               : [];
           const bisBuild =
             section.slug === "bis" ? getBisBuild(classSlug, specSlug) : null;
+          const enchantBuild =
+            section.slug === "consumables"
+              ? getEnchantBuild(classSlug, specSlug)
+              : null;
+          const consumableBuild =
+            section.slug === "consumables"
+              ? getConsumableBuild(classSlug, specSlug)
+              : null;
           const hasContent =
-            builds.length > 0 || !!guide?.content || !!bisBuild;
+            builds.length > 0 ||
+            !!guide?.content ||
+            !!bisBuild ||
+            !!enchantBuild ||
+            !!consumableBuild;
 
           return (
             <section
@@ -151,6 +167,28 @@ export default async function SpecPage({
                 <div className="mt-4">
                   <BisBuildCard
                     build={bisBuild}
+                    classSlug={classSlug}
+                    specSlug={specSlug}
+                    classColor={cls.color}
+                  />
+                </div>
+              )}
+
+              {enchantBuild && (
+                <div className="mt-4">
+                  <EnchantBuildCard
+                    build={enchantBuild}
+                    classSlug={classSlug}
+                    specSlug={specSlug}
+                    classColor={cls.color}
+                  />
+                </div>
+              )}
+
+              {consumableBuild && (
+                <div className="mt-4">
+                  <ConsumableBuildCard
+                    build={consumableBuild}
                     classSlug={classSlug}
                     specSlug={specSlug}
                     classColor={cls.color}
