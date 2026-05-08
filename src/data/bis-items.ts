@@ -106,6 +106,9 @@ export const ITEM_TRANSLATIONS: Record<number, string> = {
   151332: "공허발톱 건틀릿",
   249954: "밤의 종결자의 철갑장화",
   193708: "백금 별의 고리",
+  249368: "영원한 공허노래 사슬",
+  249295: "투랄리온의 마지막 메아리",
+  251105: "주문파괴자의 수호물",
 };
 
 // 와우 아이템 등급 색상. 와우헤드 스크립트가 hydration 후 늦게 색칠하면 깜빡임이 보여
@@ -127,6 +130,7 @@ export const ITEM_RARITY: Record<number, ItemRarity> = {
   151332: "rare", // Voidclaw Gauntlets
   258575: "rare", // Rigid Scale Greatcloak
   252420: "rare", // Solarflare Prism
+  251105: "rare", // Ward of the Spellbreaker
 };
 
 export function getBisItemColor(item: { itemId?: number }): string {
@@ -145,11 +149,13 @@ export const SOURCE_TRANSLATIONS: Record<string, string> = {
   "The Voidspire (Raid) - Vorasius": "공허첨탑 (레이드) - 보라시우스",
   "The Dreamrift (Raid) - Chimaerus": "꿈의 균열 (레이드) - 카이메루스",
   "March on Quel'Danas (Raid) - Midnight Falls": "쿠엘다나스 진격로 (레이드) - 한밤의 도래",
+  "The Voidspire (Raid) - Crown of the Cosmos": "공허첨탑 (레이드) - 우주의 왕관",
   "Windrunner Spire (Dungeon)": "윈드러너 첨탑 (던전)",
   "Nexus-Point Xenas (Dungeon)": "공결탑 제나스 (던전)",
   "Algeth'ar Academy (Dungeon)": "알게타르 대학 (던전)",
   "Skyreach (Dungeon)": "하늘탑 (던전)",
   "Seat of the Triumvirate (Dungeon)": "삼두정의 권좌 (던전)",
+  "Magister's Terrace (Dungeon)": "마법학자의 정원 (던전)",
   "Crafted (Tailoring)": "제작",
   "Crafted (Blacksmithing)": "제작",
   "Matrix Catalyst": "촉매",
@@ -311,6 +317,156 @@ export const BIS_BUILDS: BisBuild[] = [
         iconName: "inv_enchant_shardbrilliantlarge",
         source: "Skyreach (Dungeon)",
         tier: "S",
+      },
+    ],
+  },
+  // ── 전사 / 방어 ────────────────────────────
+  {
+    classSlug: "warrior",
+    specSlug: "protection",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "head",
+        itemName: "Night Ender's Tusks",
+        itemId: 249952,
+        iconName: "inv_helm_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "neck",
+        itemName: "Eternal Voidsong Chain",
+        itemId: 249368,
+        iconName: "inv_12_jewelry_silvermoonelf_necklace_blue1",
+        source: "The Voidspire (Raid) - Crown of the Cosmos",
+      },
+      {
+        slot: "shoulders",
+        itemName: "Night Ender's Pauldrons",
+        itemId: 249950,
+        iconName: "inv_shoulder_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "back",
+        itemName: "Adherent's Silken Shroud",
+        itemId: 239656,
+        iconName: "inv_cape_cloth_questbloodelf_b_01",
+        source: "Crafted (Tailoring)",
+      },
+      {
+        slot: "chest",
+        itemName: "Night Ender's Breastplate",
+        itemId: 249955,
+        iconName: "inv_chest_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "wrist",
+        itemName: "Spellbreaker's Bracers",
+        itemId: 237834,
+        iconName: "inv_plate_questbloodelf_b_01_bracer",
+        source: "Crafted (Blacksmithing)",
+      },
+      {
+        slot: "hands",
+        itemName: "Voidclaw Gauntlets",
+        itemId: 151332,
+        iconName: "inv_glove_plate_legiondungeon_c_03",
+        source: "Seat of the Triumvirate (Dungeon)",
+      },
+      {
+        slot: "waist",
+        itemName: "Night Ender's Girdle",
+        itemId: 249949,
+        iconName: "inv_belt_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "legs",
+        itemName: "Night Ender's Chausses",
+        itemId: 249951,
+        iconName: "inv_pant_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "feet",
+        itemName: "Night Ender's Greatboots",
+        itemId: 249954,
+        iconName: "inv_boot_plate_raidwarriormidnight_d_01",
+        source: "Matrix Catalyst",
+      },
+      {
+        slot: "ring1",
+        itemName: "Eye of Midnight",
+        itemId: 249920,
+        iconName: "inv_12_jewelry_devouringhost_ring_bronze",
+        source: "March on Quel'Danas (Raid) - Midnight Falls",
+      },
+      {
+        slot: "ring2",
+        itemName: "Occlusion of Void",
+        itemId: 251217,
+        iconName: "inv_12_trinket_devouring_host_currency1_bronze",
+        source: "Nexus-Point Xenas (Dungeon)",
+      },
+      {
+        slot: "main-hand",
+        itemName: "Turalyon's False Echo",
+        itemId: 249295,
+        iconName: "inv_mace_1h_raidmidnight_d_01",
+        source: "The Voidspire (Raid) - Crown of the Cosmos",
+        note: "한 손 둔기",
+      },
+      {
+        slot: "off-hand",
+        itemName: "Ward of the Spellbreaker",
+        itemId: 251105,
+        iconName: "inv_shield_1h_dungeonharronir_c_01",
+        source: "Magister's Terrace (Dungeon)",
+        note: "방패",
+      },
+    ],
+    trinkets: [
+      {
+        contentType: "raid",
+        itemName: "Gaze of the Alnseer",
+        itemId: 249343,
+        iconName: "inv_12_trinket_raid_dreamrift_gazeofthealnseer",
+        source: "The Dreamrift (Raid) - Chimaerus",
+        tier: "S",
+      },
+      {
+        contentType: "raid",
+        itemName: "Heart of Ancient Hunger",
+        itemId: 249342,
+        iconName: "inv_12_trinket_raid_voidspire_strdps_hearthofancienthunger",
+        source: "The Voidspire (Raid) - Vorasius",
+        tier: "A",
+      },
+      {
+        contentType: "raid",
+        itemName: "Umbral Plume",
+        itemId: 260235,
+        iconName: "inv_12_dualityphoenix_void_feather",
+        source: "쿠엘다나스 진격로 (레이드) - 알라르 자손 벨로렌",
+        tier: "A",
+      },
+      {
+        contentType: "raid",
+        itemName: "Radiant Plume",
+        itemId: 249806,
+        iconName: "inv_12_dualityphoenix_holy_feather",
+        source: "쿠엘다나스 진격로 (레이드) - 알라르 자손 벨로렌",
+        tier: "A",
+      },
+      {
+        contentType: "mythic-plus",
+        itemName: "Algeth'ar Puzzle Box",
+        itemId: 193701,
+        iconName: "inv_misc_enggizmos_18",
+        source: "Algeth'ar Academy (Dungeon)",
+        tier: "A",
       },
     ],
   },
