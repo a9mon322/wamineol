@@ -377,6 +377,156 @@ export const ENCHANT_BUILDS: EnchantBuild[] = [
       },
     ],
   },
+  {
+    classSlug: "hunter",
+    specSlug: "beast-mastery",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Rune of Avoidance",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Grace",
+        itemId: 243990,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Dexterity",
+        itemId: 243952,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243956,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "marksmanship",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Mending",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243956,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "survival",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Mending",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243956,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
 ];
 
 export function getEnchantBuild(classSlug: string, specSlug: string) {
