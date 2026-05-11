@@ -303,6 +303,144 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MjlxYmBAAAAAwMlZZGmZsNMbDzsNjxYmhZsxGAAAzMtNzsNDAYDwAgxMmBmZmZ2wyMYYMMYA",
     imageUrl: "/talent-builds/성기사-징벌-광역-레이드.png",
   },
+
+  // ── 사냥꾼 / 야수 ────────────────────────────
+  {
+    classSlug: "hunter",
+    specSlug: "beast-mastery",
+    sectionSlug: "mythic-plus",
+    buildSlug: "pack-leader",
+    buildName: "무리의 지도자",
+    accentColor: "#98D982",
+    description: "",
+    importCode:
+      "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwGsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzYGbzMDjZwYaGAAAAAAAAgHYmxAmZDwYmFwyAA",
+    imageUrl: "/talent-builds/사냥꾼-야수-무리의 지도자-쐐기.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "beast-mastery",
+    sectionSlug: "mythic-plus",
+    buildSlug: "dark-ranger",
+    buildName: "어둠순찰자",
+    accentColor: "#9B59B6",
+    description: "",
+    importCode:
+      "C0PAAAAAAAAAAAAAAAAAAAAAAYzsNwAGwMsBMWAAwMjlZmhZYmZGMjZmZYGzMjZmZsNzMMmBjpZAAAAAMDAAAzDMmZYmBIgZBsNA",
+    imageUrl: "/talent-builds/사냥꾼-야수-어둠순찰자-쐐기.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "beast-mastery",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYG2GzsNzwMmZYYmxYmxMzYGzYbmZMjZwYaGAAAAAzAAAwYmxAmZDwwsA2GA",
+    imageUrl: "/talent-builds/사냥꾼-야수-단일-레이드.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "beast-mastery",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGPwyMzsYGmZmZGzMMzMmhZGzMzYzMjZMDGTzAAAAAAAAAmZMGwMbAwsA2GA",
+    imageUrl: "/talent-builds/사냥꾼-야수-광역-레이드.png",
+  },
+
+  // ── 사냥꾼 / 사격 ────────────────────────────
+  {
+    classSlug: "hunter",
+    specSlug: "marksmanship",
+    sectionSlug: "mythic-plus",
+    buildSlug: "sentinel",
+    buildName: "파수꾼",
+    accentColor: "#5DADE2",
+    description: "",
+    importCode:
+      "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMjtZMjxMsMmmxYMz22mZmZYmhlZmlxYWGmZAAAegxYAYmxGDDwGG",
+    imageUrl: "/talent-builds/사냥꾼-사격-파수꾼-쐐기.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "marksmanship",
+    sectionSlug: "mythic-plus",
+    buildSlug: "dark-ranger",
+    buildName: "어둠순찰자",
+    accentColor: "#9B59B6",
+    description: "",
+    importCode:
+      "C4PAAAAAAAAAAAAAAAAAAAAAAYzsNwAGwMsFYWAAAAAAAAAmxMmx2MmZGzgx0MGMLbMzMLzMzMzMLMzywMDAAwMGzMzMgBGGgNmB",
+    imageUrl: "/talent-builds/사냥꾼-사격-어둠순찰자-쐐기.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "marksmanship",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C4PAAAAAAAAAAAAAAAAAAAAAAYzsNwAGwMsFYWAAAAAAAAAmxMmx2MmZGzgx0MGMbbMzMLzMjZmZjZWGMDAAYMzMzMzMgBwAsxMjB",
+    imageUrl: "/talent-builds/사냥꾼-사격-단일-레이드.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "marksmanship",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAgZMzMDzYmZMDGTzYwsttZmZMzMzMzswMLDzMAAgxMjBgZGbYxAsxMjB",
+    imageUrl: "/talent-builds/사냥꾼-사격-광역-레이드.png",
+  },
+
+  // ── 사냥꾼 / 생존 ────────────────────────────
+  {
+    classSlug: "hunter",
+    specSlug: "survival",
+    sectionSlug: "mythic-plus",
+    buildSlug: "pack-leader",
+    buildName: "무리의 지도자",
+    accentColor: "#98D982",
+    description: "",
+    importCode:
+      "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmxM2mxwYGWGTzAAAAwAAjllZmZxMzMMjxAmZDwwYMzsZA",
+    imageUrl: "/talent-builds/사냥꾼-생존-무리의 지도자-쐐기.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "survival",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMGWgFYGGawixMzMzYZAAAAAAwMmZmhZMmxMYoZAAAAAAMWWmZmFzMzMzMzAYmNAzixYGbGA",
+    imageUrl: "/talent-builds/사냥꾼-생존-단일-레이드.png",
+  },
+  {
+    classSlug: "hunter",
+    specSlug: "survival",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmxMYMmxMYMNDAAAAAgxyyMzsYmZGzMzYAzsBYWMGzMbGA",
+    imageUrl: "/talent-builds/사냥꾼-생존-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
