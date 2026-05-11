@@ -157,7 +157,7 @@ export default async function SpecPage({
                   </h3>
                   <div className="grid gap-4 md:grid-cols-2">
                     {builds.map((b) => (
-                      <TalentBuildCard key={b.heroTalentSlug} build={b} />
+                      <TalentBuildCard key={b.buildSlug} build={b} />
                     ))}
                   </div>
                 </div>

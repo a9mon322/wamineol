@@ -3,7 +3,9 @@ import type { TalentBuild } from "@/data/talent-builds";
 import ImportCodeBlock from "@/components/ImportCodeBlock";
 
 export default function TalentBuildCard({ build }: { build: TalentBuild }) {
-  const detailHref = `/classes/${build.classSlug}/${build.specSlug}/builds/${build.sectionSlug}/${build.heroTalentSlug}`;
+  const detailHref = `/classes/${build.classSlug}/${build.specSlug}/builds/${build.sectionSlug}/${build.buildSlug}`;
+  const badgeLabel = build.sectionSlug === "raid" ? build.buildName : "영웅특성";
+  const titleSuffix = build.sectionSlug === "raid" ? "레이드 빌드" : `${build.buildName} 빌드`;
 
   return (
     <div
@@ -23,13 +25,13 @@ export default function TalentBuildCard({ build }: { build: TalentBuild }) {
               border: `1px solid ${build.accentColor}66`,
             }}
           >
-            영웅특성
+            {badgeLabel}
           </span>
           <h3
             className="text-xl font-bold"
             style={{ color: build.accentColor }}
           >
-            {build.heroTalentName} 빌드
+            {titleSuffix}
           </h3>
           <span className="ml-auto text-sm text-muted group-hover:text-accent">
             자세히 →
@@ -45,7 +47,7 @@ export default function TalentBuildCard({ build }: { build: TalentBuild }) {
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={build.imageUrl}
-              alt={`${build.heroTalentName} 빌드 특성 트리`}
+              alt={`${build.buildName} 빌드 특성 트리`}
               className="w-full rounded-md border border-border bg-background"
             />
           ) : (
@@ -56,10 +58,12 @@ export default function TalentBuildCard({ build }: { build: TalentBuild }) {
         </div>
       </Link>
 
-      <div className="border-t border-border bg-surface px-5 py-4">
-        <div className="mb-1 text-xs text-muted">Import 코드</div>
-        <ImportCodeBlock code={build.importCode} />
-      </div>
+      {build.importCode && (
+        <div className="border-t border-border bg-surface px-5 py-4">
+          <div className="mb-1 text-xs text-muted">Import 코드</div>
+          <ImportCodeBlock code={build.importCode} />
+        </div>
+      )}
     </div>
   );
 }

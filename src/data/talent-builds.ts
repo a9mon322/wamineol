@@ -4,13 +4,16 @@ export type TalentBuild = {
   classSlug: string;
   specSlug: string;
   sectionSlug: TalentBuildSection;
-  heroTalentSlug: string;
-  heroTalentName: string;
+  buildSlug: string;
+  buildName: string;
   accentColor: string;
   description: string;
   importCode: string;
   imageUrl?: string;
 };
+
+const RAID_SINGLE_COLOR = "#DC143C";
+const RAID_AOE_COLOR = "#F39C12";
 
 export const TALENT_BUILDS: TalentBuild[] = [
   // ── 전사 / 무기 ────────────────────────────
@@ -18,8 +21,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "arms",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "colossus",
-    heroTalentName: "거신",
+    buildSlug: "colossus",
+    buildName: "거신",
     accentColor: "#C8A45C",
     description: "",
     importCode:
@@ -30,8 +33,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "arms",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "slayer",
-    heroTalentName: "학살자",
+    buildSlug: "slayer",
+    buildName: "학살자",
     accentColor: "#DC143C",
     description: "",
     importCode:
@@ -42,25 +45,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "arms",
     sectionSlug: "raid",
-    heroTalentSlug: "colossus",
-    heroTalentName: "거신",
-    accentColor: "#C8A45C",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphxwMbLzMzMjZGzMAAAAAGbmB2iBsZGDLwAzwGNGsAmZYYwsZ2GMzAAMzwA",
-    imageUrl: "/talent-builds/전사-무기-거신-레이드.png",
+      "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMzMDAAAghphZGzMWmZmZGMmZAAAAAMzyMDIjx2yALgBMDTgZwGwMY2GDmxAMzAwMGGA",
+    imageUrl: "/talent-builds/전사-무기-단일-레이드.png",
   },
   {
     classSlug: "warrior",
     specSlug: "arms",
     sectionSlug: "raid",
-    heroTalentSlug: "slayer",
-    heroTalentName: "학살자",
-    accentColor: "#DC143C",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
     description: "",
     importCode:
-      "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZAAAAMMNMzYmxyMzMzgxMDAAAAgZWmZgtMGLLDsAGwMMBmBbAzgZbMYmtBYmBgZMMA",
-    imageUrl: "/talent-builds/전사-무기-학살자-레이드.png",
+      "CcEAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMzYGAAAghphZYmZZZmZmZYGzMAAAAAGbmB2iBsZGDLwAzwGNGsAMDGDmNz2gZGAwMzwA",
+    imageUrl: "/talent-builds/전사-무기-광역-레이드.png",
   },
 
   // ── 전사 / 분노 ────────────────────────────
@@ -68,8 +71,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "fury",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "mountain-thane",
-    heroTalentName: "산왕",
+    buildSlug: "mountain-thane",
+    buildName: "산왕",
     accentColor: "#6896C2",
     description: "",
     importCode:
@@ -80,8 +83,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "fury",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "slayer",
-    heroTalentName: "학살자",
+    buildSlug: "slayer",
+    buildName: "학살자",
     accentColor: "#DC143C",
     description: "",
     importCode:
@@ -92,25 +95,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "fury",
     sectionSlug: "raid",
-    heroTalentSlug: "mountain-thane",
-    heroTalentName: "산왕",
-    accentColor: "#6896C2",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDzMz2yMzMzMMmZMjZMzyMzYMzsMmZGAAIMwGssY0YGAzCmxCgZwYAwMDghZmZGGM",
-    imageUrl: "/talent-builds/전사-분노-산왕-레이드.png",
+      "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMsMzMzMDjZGzYGzsMzMzYmZbMzMAAQMWWGYBMgZYCMDbAzMbMbDAAmZMMmZGGM",
+    imageUrl: "/talent-builds/전사-분노-단일-레이드.png",
   },
   {
     classSlug: "warrior",
     specSlug: "fury",
     sectionSlug: "raid",
-    heroTalentSlug: "slayer",
-    heroTalentName: "학살자",
-    accentColor: "#DC143C",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
     description: "",
     importCode:
-      "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMsMzMzMDjZGzYGzsMzMzYmZbMzMAAQMWWGYBMgZYCMDbAzMbMbDAAmZMMmZGGM",
-    imageUrl: "/talent-builds/전사-분노-학살자-레이드.png",
+      "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDzMz2yMzMzMMmZMjZMzyMzYMzsMmZGAAIMwGssY0YGAzCmxCgZwYAwMDghZmZGGM",
+    imageUrl: "/talent-builds/전사-분노-광역-레이드.png",
   },
 
   // ── 전사 / 방어 ────────────────────────────
@@ -118,8 +121,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "protection",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "colossus",
-    heroTalentName: "거신",
+    buildSlug: "colossus",
+    buildName: "거신",
     accentColor: "#C8A45C",
     description: "",
     importCode:
@@ -130,8 +133,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "protection",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "mountain-thane",
-    heroTalentName: "산왕",
+    buildSlug: "mountain-thane",
+    buildName: "산왕",
     accentColor: "#6896C2",
     description: "",
     importCode:
@@ -142,25 +145,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "warrior",
     specSlug: "protection",
     sectionSlug: "raid",
-    heroTalentSlug: "colossus",
-    heroTalentName: "거신",
-    accentColor: "#C8A45C",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMjZmZmZGzmxsMjxYmGGDLzMzMDGzMAAAAYZAYGDAsZGDbwAzwCNmZBmxMDmtBAYmBAMDYA",
-    imageUrl: "/talent-builds/전사-방어-거신-레이드.png",
+      "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZGzMzMzMmNjZZGjxohxMbmZmZGzMmZAAAAwyYAmxAMwGssY0YGAzGmZDmhZYGDAmZAAwAG",
+    imageUrl: "/talent-builds/전사-방어-단일-레이드.png",
   },
   {
     classSlug: "warrior",
     specSlug: "protection",
     sectionSlug: "raid",
-    heroTalentSlug: "mountain-thane",
-    heroTalentName: "산왕",
-    accentColor: "#6896C2",
-    description: "",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "단일/광역 동일 빌드",
     importCode:
-      "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzMzmxsMjxY0wMDLzMzMDzYmBAAAALDAzYAGYDWWMaMDgZDzsBzYmBz2AgZGAAGgB",
-    imageUrl: "/talent-builds/전사-방어-산왕-레이드.png",
+      "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZGzMzMzMmNjZZGjxohxMbmZmZGzMmZAAAAwyYAmxAMwGssY0YGAzGmZDmhZYGDAmZAAwAG",
+    imageUrl: "/talent-builds/전사-방어-단일-레이드.png",
   },
 
   // ── 성기사 / 보호 ────────────────────────────
@@ -168,8 +171,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "protection",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "lightsmith",
-    heroTalentName: "빛의 대장장이",
+    buildSlug: "lightsmith",
+    buildName: "빛의 대장장이",
     accentColor: "#F0E68C",
     description: "",
     importCode:
@@ -180,8 +183,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "protection",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "templar",
-    heroTalentName: "기사단",
+    buildSlug: "templar",
+    buildName: "기사단",
     accentColor: "#E6CC80",
     description: "",
     importCode:
@@ -192,25 +195,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "protection",
     sectionSlug: "raid",
-    heroTalentSlug: "lightsmith",
-    heroTalentName: "빛의 대장장이",
-    accentColor: "#F0E68C",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CIEAAAAAAAAAAAAAAAAAAAAAAsZGzYWGLzDMjZmZbZMGzsYZYAAGAAAAAA00MjZGzMjhZrNAMAwMYDAAAAmZW2WaZmxCYGADmhxAgZGAMzAG",
-    imageUrl: "/talent-builds/성기사-보호-빛의 대장장이-레이드.png",
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsZmZYWmZZmZMzwyYMmZhhBAYAAAAAAQaMbzMmZYMzWAwAGYGsBAAmZabmZZGAgNwMgBjZYMAALzAMzAG",
+    imageUrl: "/talent-builds/성기사-보호-단일-레이드.png",
   },
   {
     classSlug: "paladin",
     specSlug: "protection",
     sectionSlug: "raid",
-    heroTalentSlug: "templar",
-    heroTalentName: "기사단",
-    accentColor: "#E6CC80",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
     description: "",
     importCode:
-      "CIEAAAAAAAAAAAAAAAAAAAAAAsZGDzyYZmZMzMLLjxYmFLzYAAGAAAAAA00MziZMzwwsFAMwAGYDAAMz02MzyMAAbMMDAGzwYAAWmBYmBMA",
-    imageUrl: "/talent-builds/성기사-보호-기사단-레이드.png",
+      "CIEAAAAAAAAAAAAAAAAAAAAAAsZMYWGLzMjZmZbZMGzsMLDDAwAAAAAAg0YWmZMzMGmt2AwAAzgNAAwMTbzMLzAAsxwMAGjZYMAALzAMzAG",
+    imageUrl: "/talent-builds/성기사-보호-광역-레이드.png",
   },
 
   // ── 성기사 / 신성 ────────────────────────────
@@ -218,8 +221,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "holy",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "lightsmith",
-    heroTalentName: "빛의 대장장이",
+    buildSlug: "lightsmith",
+    buildName: "빛의 대장장이",
     accentColor: "#F0E68C",
     description: "",
     importCode:
@@ -230,8 +233,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "holy",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "herald-of-the-sun",
-    heroTalentName: "태양의 사자",
+    buildSlug: "herald-of-the-sun",
+    buildName: "태양의 사자",
     accentColor: "#FFB800",
     description: "",
     importCode:
@@ -242,25 +245,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "holy",
     sectionSlug: "raid",
-    heroTalentSlug: "lightsmith",
-    heroTalentName: "빛의 대장장이",
-    accentColor: "#F0E68C",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAAsMmhZGzMzGDGz2YbmZxIxwYmZYY2yAwAwGYjlZmBAAAmZ22WsMzwGbMD2MMmxgBgZGAmxY0A",
-    imageUrl: "/talent-builds/성기사-신성-빛의 대장장이-레이드.png",
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMAAglxMzYGzMzGjxYWGbzMLmpJmlZMzMMMbZAYADbgNzyMmZZ2mZmtGAAAgFAYDGzYGAAwMDzYMMA",
+    imageUrl: "/talent-builds/성기사-신성-단일-레이드.png",
   },
   {
     classSlug: "paladin",
     specSlug: "holy",
     sectionSlug: "raid",
-    heroTalentSlug: "herald-of-the-sun",
-    heroTalentName: "태양의 사자",
-    accentColor: "#FFB800",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
     description: "",
     importCode:
-      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAAsMmZmZGzMzCMmxyYzMLGNxsMjZmhhZLDADAbgNz2MzMLz2Mzs1AAAAswGgNYMMzYAAYmhZMGGA",
-    imageUrl: "/talent-builds/성기사-신성-태양의 사자-레이드.png",
+      "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYBAMDAAsMmZGzYmZ2YMGzyYbmZxMNxYGzMDDzWGAGwwGYjlZMzysNzMbNAAAALgHA2gxMmBAAMzwMGDD",
+    imageUrl: "/talent-builds/성기사-신성-광역-레이드.png",
   },
 
   // ── 성기사 / 징벌 ────────────────────────────
@@ -268,8 +271,8 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "retribution",
     sectionSlug: "mythic-plus",
-    heroTalentSlug: "templar",
-    heroTalentName: "기사단",
+    buildSlug: "templar",
+    buildName: "기사단",
     accentColor: "#E6CC80",
     description: "",
     importCode:
@@ -280,13 +283,25 @@ export const TALENT_BUILDS: TalentBuild[] = [
     classSlug: "paladin",
     specSlug: "retribution",
     sectionSlug: "raid",
-    heroTalentSlug: "templar",
-    heroTalentName: "기사단",
-    accentColor: "#E6CC80",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
     description: "",
     importCode:
-      "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMmZmBAAAAAwMlxMMzYbY2GmZbGjxYYGbsBAAwMTbzMbzAA2AMAYMDzgZMzshlZwwYGDG",
-    imageUrl: "/talent-builds/성기사-징벌-기사단-레이드.png",
+      "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAwMTbzMbzAA2AMAYMDzgZMmNsMDGGzYwA",
+    imageUrl: "/talent-builds/성기사-징벌-단일-레이드.png",
+  },
+  {
+    classSlug: "paladin",
+    specSlug: "retribution",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MjlxYmBAAAAAwMlZZGmZsNMbDzsNjxYmhZsxGAAAzMtNzsNDAYDwAgxMmBmZmZ2wyMYYMMYA",
+    imageUrl: "/talent-builds/성기사-징벌-광역-레이드.png",
   },
 ];
 
