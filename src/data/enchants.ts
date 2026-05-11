@@ -696,6 +696,156 @@ export const ENCHANT_BUILDS: EnchantBuild[] = [
       },
     ],
   },
+  {
+    classSlug: "priest",
+    specSlug: "discipline",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Mending",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Magister",
+        itemId: 244002,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Arcanoweave Spellthread",
+        itemId: 240155,
+        iconName: "inv_12_tailoring_spellthread_violet_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Zul'jin's Mastery",
+        itemId: 243959,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "priest",
+    specSlug: "holy",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Mending",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Magister",
+        itemId: 244002,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Arcanoweave Spellthread",
+        itemId: 240155,
+        iconName: "inv_12_tailoring_spellthread_violet_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Zul'jin's Mastery",
+        itemId: 243959,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "priest",
+    specSlug: "shadow",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Acuity of the Ren'dorei",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Hex of Leeching",
+        itemId: 243950,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Grace",
+        itemId: 243990,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Arcanoweave Spellthread",
+        itemId: 240155,
+        iconName: "inv_12_tailoring_spellthread_violet_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Shaladrassil's Roots",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Zul'jin's Mastery",
+        itemId: 243959,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
 ];
 
 export function getEnchantBuild(classSlug: string, specSlug: string) {

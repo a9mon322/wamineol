@@ -579,6 +579,156 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
     imageUrl: "/talent-builds/도적-잠행-광역-레이드.png",
   },
+
+  // ── 사제 / 수양 ────────────────────────────
+  {
+    classSlug: "priest",
+    specSlug: "discipline",
+    sectionSlug: "mythic-plus",
+    buildSlug: "oracle",
+    buildName: "예언자",
+    accentColor: "#FFD700",
+    description: "",
+    importCode:
+      "CAQAAAAAAAAAAAAAAAAAAAAAAADsNzDwyMjxMzgZbmtZmxMmZAAAAAAAAAAMMLzgZmZYGmBMNTMAzsghwYWGgxgFAAYMzMjhZGgZmZAD",
+    imageUrl: "/talent-builds/사제-수양-예언자-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "discipline",
+    sectionSlug: "mythic-plus",
+    buildSlug: "voidweaver",
+    buildName: "공허술사",
+    accentColor: "#8B5DD8",
+    description: "",
+    importCode:
+      "CAQAAAAAAAAAAAAAAAAAAAAAAADsYY2mZmZmZmZMbwMzMDzAAAAAAAAAAYYWmBzMzwMmZATzEDmZAAAmtZbDM2MAAMmZmxgZwMDmpZ4BA",
+    imageUrl: "/talent-builds/사제-수양-공허술사-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "discipline",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CAQAAAAAAAAAAAAAAAAAAAAAAADsMY2mZm5BYmBmZbmZmZYGAAAAAAAAAAjxyMYmZGmhZATz0MDwMbYIMmlBYMYBAAGjZGDzMAzMDzwA",
+    imageUrl: "/talent-builds/사제-수양-단일-레이드.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "discipline",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CAQAAAAAAAAAAAAAAAAAAAAAAADsYY2YMzYmZMmZbmZmBzAAAAAAAAAAYmZWmBzMzghZATz0MDwMLYIMmlBYMYBAAGDzYYmBYmZGzwA",
+    imageUrl: "/talent-builds/사제-수양-광역-레이드.png",
+  },
+
+  // ── 사제 / 신성 ────────────────────────────
+  {
+    classSlug: "priest",
+    specSlug: "holy",
+    sectionSlug: "mythic-plus",
+    buildSlug: "archon",
+    buildName: "집정관",
+    accentColor: "#F5DEB3",
+    description: "",
+    importCode:
+      "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAgZDGzygxMzMjZmZsMzMDAAAADzyMMzMzwMmZAMTBAmZzMMbGAYMYzYmNANjZGjBzstMAzAD",
+    imageUrl: "/talent-builds/사제-신성-집정관-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "holy",
+    sectionSlug: "mythic-plus",
+    buildSlug: "oracle",
+    buildName: "예언자",
+    accentColor: "#FFD700",
+    description: "",
+    importCode:
+      "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAbGzYWGzwMjhZYsNzMzAAAAYMWmBzMzgxMjxGmpAYmFMEGzyAMGYxMzAgZMzYMMzAMzMgB",
+    imageUrl: "/talent-builds/사제-신성-예언자-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "holy",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMDzAYmaAgZWMDziBAGD2MzMLAaGjxYYmZbZAmBG",
+    imageUrl: "/talent-builds/사제-신성-단일-레이드.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "holy",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAgZmlxYMzMDzMzYZGmBAAAwMmlZwMzMMzYGAzUDAMziZYWMAwYwmZmZBQGjxYYmZbZAmBG",
+    imageUrl: "/talent-builds/사제-신성-광역-레이드.png",
+  },
+
+  // ── 사제 / 암흑 ────────────────────────────
+  {
+    classSlug: "priest",
+    specSlug: "shadow",
+    sectionSlug: "mythic-plus",
+    buildSlug: "voidweaver",
+    buildName: "공허술사",
+    accentColor: "#8B5DD8",
+    description: "",
+    importCode:
+      "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMGAAAAAAAAAAAAjZZmxYZmxMz2MDDz2MzYmZGQmhtZaMwMzMAQAmtZbDMbMAwgxMzMmtxMYmBzgB",
+    imageUrl: "/talent-builds/사제-암흑-공허술사-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "shadow",
+    sectionSlug: "mythic-plus",
+    buildSlug: "archon",
+    buildName: "집정관",
+    accentColor: "#F5DEB3",
+    description: "",
+    importCode:
+      "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAghZxMGLzMmZWmZYY2mZGzMzYDZYZbmGgZAmZzMMbGAyYsAgZAGzMzY2GzstMAzgB",
+    imageUrl: "/talent-builds/사제-암흑-집정관-쐐기.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "shadow",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAgxYxMGLzMMz2MDzY2MzYmZGbIzYxMNAzAMziZY2MAkxYBAzAMmZmxsNmZbZAmBD",
+    imageUrl: "/talent-builds/사제-암흑-단일-레이드.png",
+  },
+  {
+    classSlug: "priest",
+    specSlug: "shadow",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAghZxMGLzMmZ2mZYG2mZGzMzYDZGLmpBYmZGAIAz2stBmNGAYwYmZGz2YGMzgZwA",
+    imageUrl: "/talent-builds/사제-암흑-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
