@@ -441,6 +441,144 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2gFYGGawiZmZmZYZAAAAAAwMmxMYMmxMYMNDAAAAAgxyyMzsYmZGzMzYAzsBYWMGzMbGA",
     imageUrl: "/talent-builds/사냥꾼-생존-광역-레이드.png",
   },
+
+  // ── 도적 / 암살 ────────────────────────────
+  {
+    classSlug: "rogue",
+    specSlug: "assassination",
+    sectionSlug: "mythic-plus",
+    buildSlug: "fatebound",
+    buildName: "운명결속",
+    accentColor: "#B19CD9",
+    description: "",
+    importCode:
+      "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmNDGAAAAAYWGsNDAAAAAotlZmZmZmxYmZmZbmlZGPgHYmZmZMMzYMAGYBmxoxsBYbAbGAMzMYA",
+    imageUrl: "/talent-builds/도적-암살-운명결속-쐐기.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "assassination",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsZwAAAAAAzyglZAAAAAAZbMzMzMjxMzMz2MLzMzgxMzMjZGzYAMwCMjRjZDw2A2MAYmZmxA",
+    imageUrl: "/talent-builds/도적-암살-단일-레이드.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "assassination",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmNDGAAAAAYWGsNDAAAAAIbzMzMzMjxMzMz2MLzMeAPwMjZGDzMGDgBWgZMaMbA2GwmxGgZmxYA",
+    imageUrl: "/talent-builds/도적-암살-광역-레이드.png",
+  },
+
+  // ── 도적 / 무법 ────────────────────────────
+  {
+    classSlug: "rogue",
+    specSlug: "outlaw",
+    sectionSlug: "mythic-plus",
+    buildSlug: "trickster",
+    buildName: "기만자",
+    accentColor: "#FF6B9D",
+    description: "",
+    importCode:
+      "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZmZmtZmZMzMzsBmZbaZw2MAAAAAALLzMzwMzMzYmZ2GAAAAGDAGzihBGYWYhWYjBYmBzgB",
+    imageUrl: "/talent-builds/도적-무법-기만자-쐐기.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "outlaw",
+    sectionSlug: "mythic-plus",
+    buildSlug: "fatebound",
+    buildName: "운명결속",
+    accentColor: "#B19CD9",
+    description: "",
+    importCode:
+      "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MGzMzMzsNzMzMzMzsAmx0ygtZAAAAAAWWmZmhZmZmxMzsNAAAAmBwAbwMGNmNAbDswAgZmBG",
+    imageUrl: "/talent-builds/도적-무법-운명결속-쐐기.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "outlaw",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CQQAAAAAAAAAAAAAAAAAAAAAAAgZ2mxYmZmZmtZmZmZMmNeAmx0ygtZAAAAAA22GzMMzMzMmZmtBAAAgxMAMmFDDMwswCtwGDwMDGYA",
+    imageUrl: "/talent-builds/도적-무법-단일-레이드.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "outlaw",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MYmZMzsNzMzMzMzsBmZbaZw2MAAAAAgZbbmZGmZmZGzMz2AAAAwYAwYWMMwAzCL0CbMAzMYgB",
+    imageUrl: "/talent-builds/도적-무법-광역-레이드.png",
+  },
+
+  // ── 도적 / 잠행 ────────────────────────────
+  {
+    classSlug: "rogue",
+    specSlug: "subtlety",
+    sectionSlug: "mythic-plus",
+    buildSlug: "trickster",
+    buildName: "기만자",
+    accentColor: "#FF6B9D",
+    description: "",
+    importCode:
+      "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYmZbZmZMzMjBjZWGAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
+    imageUrl: "/talent-builds/도적-잠행-기만자-쐐기.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "subtlety",
+    sectionSlug: "mythic-plus",
+    buildSlug: "deathstalker",
+    buildName: "죽음추적자",
+    accentColor: "#708090",
+    description: "",
+    importCode:
+      "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbbMmhZMegZmZGjZbGzYbZmZMzMjBjZWGAAAAGMmFzyADYBsMMBmFMDzMAzYA",
+    imageUrl: "/talent-builds/도적-잠행-죽음추적자-쐐기.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "subtlety",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZwMzMzYMbDzYbbmZmZmZMYMz2AAAAwgxAGzmhBGYWYhWshZAzMYGDA",
+    imageUrl: "/talent-builds/도적-잠행-단일-레이드.png",
+  },
+  {
+    classSlug: "rogue",
+    specSlug: "subtlety",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZMegZmZGjZbYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAzCL0iNMDYmBzYA",
+    imageUrl: "/talent-builds/도적-잠행-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
