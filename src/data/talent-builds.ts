@@ -729,6 +729,372 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CIQAAAAAAAAAAAAAAAAAAAAAAMMjZGAAAAAAAAAAAghZxMGLzMmZ2mZYG2mZGzMzYDZGLmpBYmZGAIAz2stBmNGAYwYmZGz2YGMzgZwA",
     imageUrl: "/talent-builds/사제-암흑-광역-레이드.png",
   },
+
+  // ── 주술사 / 정기 ────────────────────────────
+  {
+    classSlug: "shaman",
+    specSlug: "elemental",
+    sectionSlug: "mythic-plus",
+    buildSlug: "farseer",
+    buildName: "선견자",
+    accentColor: "#5EBA9A",
+    description: "",
+    importCode:
+      "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMLbzMGjZZZZMmhBAAAAYxMbwAGwsxEYWAgZbmZGzssMTMzMbsMjZGDLWmxyMzYmZBAYGAMzYYYA",
+    imageUrl: "/talent-builds/주술사-정기-선견자-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "elemental",
+    sectionSlug: "mythic-plus",
+    buildSlug: "stormbringer",
+    buildName: "폭풍인도자",
+    accentColor: "#4A90E2",
+    description: "",
+    importCode:
+      "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzML2GMjZGAAAAAYzMG2gFYGGasBAz2MzMmZZZmwMzGLzYmxMWsMjFzMMzCAwMAzMwwwA",
+    imageUrl: "/talent-builds/주술사-정기-폭풍인도자-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "elemental",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMzMzMLbbDMmZAAAAAgNzYYDWgZYoxGAYbmZGjtlZahZmFWmZmZMDzyMWMzwMbAADgZGYYYA",
+    imageUrl: "/talent-builds/주술사-정기-단일-레이드.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "elemental",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMLbzMGjZZZZwMjBAAAAYxMbwAGwsxEYWAgZZmZGjtFTLMzYsYmZGzYxyMWegZGzMLDAYYAMzYYYA",
+    imageUrl: "/talent-builds/주술사-정기-광역-레이드.png",
+  },
+
+  // ── 주술사 / 고양 ────────────────────────────
+  {
+    classSlug: "shaman",
+    specSlug: "enhancement",
+    sectionSlug: "mythic-plus",
+    buildSlug: "totemic",
+    buildName: "토템술사",
+    accentColor: "#A67C52",
+    description: "",
+    importCode:
+      "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AY2mxMGLLGbMzsNzyMzMDsMmBAAYMmRMzAMYMA",
+    imageUrl: "/talent-builds/주술사-고양-토템술사-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "enhancement",
+    sectionSlug: "mythic-plus",
+    buildSlug: "stormbringer",
+    buildName: "폭풍인도자",
+    accentColor: "#4A90E2",
+    description: "",
+    importCode:
+      "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAAsBYzMG2gFYGGawCAz2MmxMLLzYxMzYsMzDMz8AYZMDAwMMmZYEYmBDGD",
+    imageUrl: "/talent-builds/주술사-고양-폭풍인도자-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "enhancement",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AYWmxMGLLzYhZmNWmZmZYYMDAwMAjZmYmBAGD",
+    imageUrl: "/talent-builds/주술사-고양-단일-레이드.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "enhancement",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZmZmZmZmZmZGzAAAAAAAAAALwGMjFN2GAzA2AwyMmZGLLzYhZmNWmZmZYYMDAgBGjZmYmBAGD",
+    imageUrl: "/talent-builds/주술사-고양-광역-레이드.png",
+  },
+
+  // ── 주술사 / 복원 ────────────────────────────
+  {
+    classSlug: "shaman",
+    specSlug: "restoration",
+    sectionSlug: "mythic-plus",
+    buildSlug: "farseer",
+    buildName: "선견자",
+    accentColor: "#5EBA9A",
+    description: "",
+    importCode:
+      "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYMzMbLbzMzMzMzMGDjFzsADYAzCTgxCmZwsMzMjmtlZGmxglZMzYwsMDAADgZGDgZGMDG",
+    imageUrl: "/talent-builds/주술사-복원-선견자-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "restoration",
+    sectionSlug: "mythic-plus",
+    buildSlug: "totemic",
+    buildName: "토템술사",
+    accentColor: "#A67C52",
+    description: "",
+    importCode:
+      "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAjZMLbLjZmZmZmZGDDLwCMjFN2GAzAbYmBzyMzMa2WmZYGzGLzYmxgZZGAAGAzMYmBgxgB",
+    imageUrl: "/talent-builds/주술사-복원-토템술사-쐐기.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "restoration",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbDzMGzMzMDzYDWgZspx2AYGYzMMY2GzMTz2yMziZMbsMjZGDmlBAAAmZGMzAADG",
+    imageUrl: "/talent-builds/주술사-복원-단일-레이드.png",
+  },
+  {
+    classSlug: "shaman",
+    specSlug: "restoration",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzMLLbjZmxYmZmZYGLwGMjFN2GAzAbmBw2MzMTz2yMDzMDWmZMjBzyAAAAzMDmZAgBD",
+    imageUrl: "/talent-builds/주술사-복원-광역-레이드.png",
+  },
+
+  // ── 마법사 / 비전 ────────────────────────────
+  {
+    classSlug: "mage",
+    specSlug: "arcane",
+    sectionSlug: "mythic-plus",
+    buildSlug: "spellslinger",
+    buildName: "주문술사",
+    accentColor: "#BB6AE0",
+    description: "",
+    importCode:
+      "C4DAAAAAAAAAAAAAAAAAAAAAAYGmZZmZmFMDamZGAAAGAAAYmZmllZmYBAgtZMzMmNzyMzMmZMGmZmxCzMzMzAAMAAAmZBAMDAGG",
+    imageUrl: "/talent-builds/마법사-비전-주문술사-쐐기.png",
+  },
+  {
+    classSlug: "mage",
+    specSlug: "arcane",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFegZGamZGAAAGAAAYmZmllZmYBAgthZmxstYZmZGzMGjZmZGLMjZegZAAGAAAzsAAmBADD",
+    imageUrl: "/talent-builds/마법사-비전-단일-레이드.png",
+  },
+
+  // ── 마법사 / 화염 ────────────────────────────
+  {
+    classSlug: "mage",
+    specSlug: "fire",
+    sectionSlug: "mythic-plus",
+    buildSlug: "sunfury",
+    buildName: "성난태양",
+    accentColor: "#FFA500",
+    description: "",
+    importCode:
+      "C8DAAAAAAAAAAAAAAAAAAAAAAMzsZsMzMzCzMjMzYAAAYAAzMTz2yyMAAbmZGbjZmZsBAAAAALmZMDAAMmxMmZmZmFAMzAmxYwMMA",
+    imageUrl: "/talent-builds/마법사-화염-성난태양-쐐기.png",
+  },
+  {
+    classSlug: "mage",
+    specSlug: "fire",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMGAAAGAwMz0sssNDAwmZmx2YmZGbAAAAAwiZmZmBAAjZMjZmZmZZAYmBYMGYYA",
+    imageUrl: "/talent-builds/마법사-화염-단일-레이드.png",
+  },
+
+  // ── 마법사 / 냉기 ────────────────────────────
+  {
+    classSlug: "mage",
+    specSlug: "frost",
+    sectionSlug: "mythic-plus",
+    buildSlug: "spellslinger",
+    buildName: "주문술사",
+    accentColor: "#BB6AE0",
+    description: "",
+    importCode:
+      "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMjYmZGzMzMziZmhZMDAAAMzMzyyMTbAAwGAAAwCAbLjZmZGmthxMjFAAAmZDYGGDYGMA",
+    imageUrl: "/talent-builds/마법사-냉기-주문술사-쐐기.png",
+  },
+  {
+    classSlug: "mage",
+    specSlug: "frost",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZEzMzYmZmZWMzMjZMDAAAMzMzyyMTbAAAAAAgNA2WGzMzMMbDjZYBAAgZ2AmBGwMYA",
+    imageUrl: "/talent-builds/마법사-냉기-단일-레이드.png",
+  },
+
+  // ── 흑마법사 / 고통 ────────────────────────────
+  {
+    classSlug: "warlock",
+    specSlug: "affliction",
+    sectionSlug: "mythic-plus",
+    buildSlug: "soul-harvester",
+    buildName: "영혼수확자",
+    accentColor: "#5D2E8C",
+    description: "",
+    importCode:
+      "CkQAAAAAAAAAAAAAAAAAAAAAAwMjZGNLmZ2mZGz2AAAmZmlZzMzyYAgx2yADYAzwWghtBAAgZAAAMzMmhx2YMDmZmZMMzMzAAmBG",
+    imageUrl: "/talent-builds/흑마법사-고통-영혼수확자-쐐기.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "affliction",
+    sectionSlug: "mythic-plus",
+    buildSlug: "hellcaller",
+    buildName: "지옥소환사",
+    accentColor: "#C0392B",
+    description: "",
+    importCode:
+      "CkQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzyAAAmZmlZzMzyYAALwAziRjZAMbglBAAgZAAgZGMmxY2GjZMjZGjhZmZAAmBG",
+    imageUrl: "/talent-builds/흑마법사-고통-지옥소환사-쐐기.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "affliction",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CkQAAAAAAAAAAAAAAAAAAAAAAgZmZmpZhZ2mZGzCAAgZmlZZmZWmZAgx2yADYAzwSghtBAAgZAAAMzMmZmBMMjZmZMYmZMAgZgB",
+    imageUrl: "/talent-builds/흑마법사-고통-단일-레이드.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "affliction",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMjZmZmlBAAMzMLzmZmlxAAjltBGwAmhtADbDAAAzAAAYmZmZMDzMmBzMzMGmZmBAYAD",
+    imageUrl: "/talent-builds/흑마법사-고통-광역-레이드.png",
+  },
+
+  // ── 흑마법사 / 악마 ────────────────────────────
+  {
+    classSlug: "warlock",
+    specSlug: "demonology",
+    sectionSlug: "mythic-plus",
+    buildSlug: "diabolist",
+    buildName: "악마학자",
+    accentColor: "#8B4789",
+    description: "",
+    importCode:
+      "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzYWGAAAAAAAwYGDLwAbDL0wixMjlZbmZGzAAzMGzMzMAjZMjNAAwYmZGDDLzYAD",
+    imageUrl: "/talent-builds/흑마법사-악마-악마학자-쐐기.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "demonology",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlBAAAAAAYstMwAGwMsFYsZMGLzyMzMmBAMzMzMDwMjZGjBAAYMzMzMGsMDgB",
+    imageUrl: "/talent-builds/흑마법사-악마-단일-레이드.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "demonology",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmtBAAAAAAAMmxwCMw2wCNsYwMLz2MzMmBAmhZmZmZAmZGzMbAAgZmZmxwYWmxAGA",
+    imageUrl: "/talent-builds/흑마법사-악마-광역-레이드.png",
+  },
+
+  // ── 흑마법사 / 파괴 ────────────────────────────
+  {
+    classSlug: "warlock",
+    specSlug: "destruction",
+    sectionSlug: "mythic-plus",
+    buildSlug: "diabolist",
+    buildName: "악마학자",
+    accentColor: "#8B4789",
+    description: "",
+    importCode:
+      "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLM2mZmZWmNzMzsYmZbZMAAYGjZmZBMmxwCMw2wGNWYAAgxgBAYmBYMjxsAAAYmZGAAMDD",
+    imageUrl: "/talent-builds/흑마법사-파괴-악마학자-쐐기.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "destruction",
+    sectionSlug: "mythic-plus",
+    buildSlug: "hellcaller",
+    buildName: "지옥소환사",
+    accentColor: "#C0392B",
+    description: "",
+    importCode:
+      "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmx2MzYWmNzMzsYmZZZMAAYGjZmZxCMwsY0YGAzG2YAAgxMMAAYmBjZMmFAAAzMzMAA8ADD",
+    imageUrl: "/talent-builds/흑마법사-파괴-지옥소환사-쐐기.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "destruction",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CsQAAAAAAAAAAAAAAAAAAAAAAYmxMzoZjhZmZmlZZmZmZxY2WMDAAmxYmZWsADMLGNmBwshNGAAYMAbAAzMwMjZGAAAmZmBAgxwA",
+    imageUrl: "/talent-builds/흑마법사-파괴-단일-레이드.png",
+  },
+  {
+    classSlug: "warlock",
+    specSlug: "destruction",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CsQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbM2mZGzysMmZmFzMLLMAAYGjZmZBMmxwCMw2wCNWYAAgxghNAMzAMzMmZAAAYmZGAAMDD",
+    imageUrl: "/talent-builds/흑마법사-파괴-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
