@@ -1271,7 +1271,7 @@ export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
         category: "flask",
         itemName: "Flask of the Sundered Sun",
         itemId: 241326,
-        iconName: "inv_12_profession_herbalism_blacklotus_void",
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
       },
       {
         category: "combat-potion",
@@ -1320,7 +1320,7 @@ export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
         category: "flask",
         itemName: "Flask of the Blood Knights",
         itemId: 241324,
-        iconName: "inv_12_profession_herbalism_blacklotus_void",
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_white-",
       },
       {
         category: "combat-potion",
@@ -1364,7 +1364,7 @@ export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
         category: "flask",
         itemName: "Flask of the Blood Knights",
         itemId: 241324,
-        iconName: "inv_12_profession_herbalism_blacklotus_void",
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_white-",
       },
       {
         category: "combat-potion",
