@@ -1095,6 +1095,132 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CsQAAAAAAAAAAAAAAAAAAAAAAgZmZGNbM2mZGzysMmZmFzMLLMAAYGjZmZBMmxwCMw2wCNWYAAgxghNAMzAMzMmZAAAYmZGAAMDD",
     imageUrl: "/talent-builds/흑마법사-파괴-광역-레이드.png",
   },
+
+  // ── 수도사 / 양조 ────────────────────────────
+  {
+    classSlug: "monk",
+    specSlug: "brewmaster",
+    sectionSlug: "mythic-plus",
+    buildSlug: "shado-pan",
+    buildName: "음영파",
+    accentColor: "#722F37",
+    description: "",
+    importCode:
+      "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGDGz2MPwGzMjBAAAAAAYZBjYmBmhxmBmZmZY2GzMmZZYZbW2mNMLAAwGAAAY2mlmZmZjhNAmZYaMAAgB",
+    imageUrl: "/talent-builds/수도사-양조-음영파-쐐기.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "brewmaster",
+    sectionSlug: "mythic-plus",
+    buildSlug: "master-of-harmony",
+    buildName: "조화의종사",
+    accentColor: "#C0A857",
+    description: "",
+    importCode:
+      "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2MwMzMDzmtZGjlhltHYZb2wsAAALzy0ysNzyAAAAYYDMzAmGDAAYA",
+    imageUrl: "/talent-builds/수도사-양조-조화의종사-쐐기.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "brewmaster",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYG2mxGmZAAAAAAAYZBjYmBmhxmZwMzMjZ2GmxMLDLb22GzYWAAgNAAAwsNLNzMziZYDgZGmGDAAYA",
+    imageUrl: "/talent-builds/수도사-양조-단일-레이드.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "brewmaster",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMbbGzYGWmxGmZMAAAAAAALLYmYmBmhZ2YMmZmZY2GmxYBLb22GzYWAAgNAAAwsNLNzMzmZYDgZGmGDYAAD",
+    imageUrl: "/talent-builds/수도사-양조-광역-레이드.png",
+  },
+
+  // ── 수도사 / 운무 ────────────────────────────
+  {
+    classSlug: "monk",
+    specSlug: "mistweaver",
+    sectionSlug: "mythic-plus",
+    buildSlug: "conduit-of-the-celestials",
+    buildName: "천신의대변자",
+    accentColor: "#5DBEAA",
+    description: "",
+    importCode:
+      "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZstsMjZ2Mz2yyMjFmRzYGwgBwMzMDzGmhZZmAAAAAAgFbzsMbzMAAwgBgZAjBWkxMA",
+    imageUrl: "/talent-builds/수도사-운무-천신의대변자-쐐기.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "mistweaver",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmZZGbYmZYmlttZGLM0MmBMYWYMLzDMzMMLDGmFTAAAAAAwilZWmtZGAAYADwMgxwYRGzA",
+    imageUrl: "/talent-builds/수도사-운무-단일-레이드.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "mistweaver",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgxM2GM2sYMzMLzYDjZYmltlZGLMjmxMgBDDWmZmZYWGMYxEAAAAAAsYZmlZZmBAAGwAMDYMMWmMmBA",
+    imageUrl: "/talent-builds/수도사-운무-광역-레이드.png",
+  },
+
+  // ── 수도사 / 풍운 ────────────────────────────
+  {
+    classSlug: "monk",
+    specSlug: "windwalker",
+    sectionSlug: "mythic-plus",
+    buildSlug: "shado-pan",
+    buildName: "음영파",
+    accentColor: "#722F37",
+    description: "",
+    importCode:
+      "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjmxMMMghhZGzwsZbmhZZmAAWMz2YYMzMAA2AgZZWamZmFghBmZAYsMAGwA",
+    imageUrl: "/talent-builds/수도사-풍운-음영파-쐐기.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "windwalker",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MGsNzMbzAAAAAAAAAAAAsMMTYGGGwMGmZmZY2GmhZZmAAWMz2YYmZmBAwGAMbzSzMzsAgBmZAYsMAGwA",
+    imageUrl: "/talent-builds/수도사-풍운-단일-레이드.png",
+  },
+  {
+    classSlug: "monk",
+    specSlug: "windwalker",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjmxMMMghZMzMzwshZYWMBAsYmtxwYmZAAsBAzys0MzMLAjZgZGAGLzAMgB",
+    imageUrl: "/talent-builds/수도사-풍운-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
