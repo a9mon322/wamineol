@@ -1404,6 +1404,197 @@ export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
       },
     ],
   },
+  {
+    classSlug: "druid",
+    specSlug: "balance",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Magisters",
+        itemId: 241322,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Draught of Rampant Abandon",
+        itemId: 241292,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "druid",
+    specSlug: "feral",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Blood Knights",
+        itemId: 241324,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Potion of Unhinged Ferocity",
+        itemId: 241288,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "druid",
+    specSlug: "guardian",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Sundered Sun",
+        itemId: 241326,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Light's Potential",
+        itemId: 241308,
+        iconName: "inv_12_profession_alchemy_lightpotion_yellow",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Silvermoon Parade",
+        itemId: 255845,
+        iconName: "inv_tradeskill_cooking_feastofblood",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "druid",
+    specSlug: "restoration",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Blood Knights",
+        itemId: 241324,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Lightfused Mana Potion",
+        itemId: 241300,
+        iconName: "inv_12_profession_alchemy_lightpotion_blue",
+        note: "쐐기에서는 처리량용 무모함의 물약 (241288)도 사용",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Hearty Harandar Celebration",
+        itemId: 266996,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Hearty Royal Roast",
+        itemId: 242747,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+    ],
+  },
 ];
 
 export function getConsumableBuild(classSlug: string, specSlug: string) {

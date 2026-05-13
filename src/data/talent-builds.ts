@@ -1221,6 +1221,194 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMYMYbmZ2mxAAAAAAAAAAAALDjmxMMMghZMzMzwshZYWMBAsYmtxwYmZAAsBAzys0MzMLAjZgZGAGLzAMgB",
     imageUrl: "/talent-builds/수도사-풍운-광역-레이드.png",
   },
+
+  // ── 드루이드 / 조화 ────────────────────────────
+  {
+    classSlug: "druid",
+    specSlug: "balance",
+    sectionSlug: "mythic-plus",
+    buildSlug: "elunes-chosen",
+    buildName: "엘룬의 대행자",
+    accentColor: "#C0E8FF",
+    description: "",
+    importCode:
+      "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmZhhZMLzsMziZmxGLzsMmZMWwwAM22mZwY2GATAAAAWYmZmBbGGjBAgZGYA",
+    imageUrl: "/talent-builds/드루이드-조화-엘룬의대행자-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "balance",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMMDGjZWGbzYGbsMzyYmZMLYAwAssN2w0MzyAAAAgNzMzMD2MGGzAYmBAGA",
+    imageUrl: "/talent-builds/드루이드-조화-단일-레이드.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "balance",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmBDzYMzyMLmZGbsMzyYmZGLYYAGbbzMYMbDgJAAAALMzMzgNjZMGAAmZgB",
+    imageUrl: "/talent-builds/드루이드-조화-광역-레이드.png",
+  },
+
+  // ── 드루이드 / 야성 ────────────────────────────
+  {
+    classSlug: "druid",
+    specSlug: "feral",
+    sectionSlug: "mythic-plus",
+    buildSlug: "druid-of-the-claw",
+    buildName: "발톱의 드루이드",
+    accentColor: "#C8854C",
+    description: "",
+    importCode:
+      "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzmZmZmxY2M2GbzMzMmZAAAAYLY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZ2mZmBAsAzMDwCDGAAAzshB",
+    imageUrl: "/talent-builds/드루이드-야성-발톱의드루이드-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "feral",
+    sectionSlug: "mythic-plus",
+    buildSlug: "wildstalker",
+    buildName: "야생추적자",
+    accentColor: "#5BA85B",
+    description: "",
+    importCode:
+      "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzmZmZmxY2M2GbzMzMmZAAAAYJY2M8AmZUzYWMzMzsMmxMAAAAAAGYAAAAAAmtZWaWmZZDMzAswgBAwMDAG",
+    imageUrl: "/talent-builds/드루이드-야성-야생추적자-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "feral",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtl5BWGbzYm5BmZAAAAYJY2MMmZUzYWGzMzYMjZAAAAAAMwAAAAAAMbzs0sNzyGYmHAYxMYAAMzAgB",
+    imageUrl: "/talent-builds/드루이드-야성-단일-레이드.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "feral",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMzCjZmxY2MPw2YbmZm5BmZAAAAYLYYYMzomxswMzMGz8AzAAAAAAYgBAAAAAY2mZpZZmlNwMDwiZwAAYmBAD",
+    imageUrl: "/talent-builds/드루이드-야성-광역-레이드.png",
+  },
+
+  // ── 드루이드 / 수호 ────────────────────────────
+  {
+    classSlug: "druid",
+    specSlug: "guardian",
+    sectionSlug: "mythic-plus",
+    buildSlug: "elunes-chosen",
+    buildName: "엘룬의 대행자",
+    accentColor: "#C0E8FF",
+    description: "",
+    importCode:
+      "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmFzMjZWmZxMPwMLLDMbGGNRmZWmZmZmlZmhBAAAAAgNzALbzMYMLDgJAAAgNjZeAgFDMYmFLAMzAA",
+    imageUrl: "/talent-builds/드루이드-수호-엘룬의대행자-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "guardian",
+    sectionSlug: "mythic-plus",
+    buildSlug: "druid-of-the-claw",
+    buildName: "발톱의 드루이드",
+    accentColor: "#C8854C",
+    description: "",
+    importCode:
+      "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxswMjZWMLzwMLLDYbGGNRzMziZmZmlxMMAAAAAGMjNDAAAAamlZZmZGAALMzAYxMYAL22GAMzGM",
+    imageUrl: "/talent-builds/드루이드-수호-발톱의드루이드-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "guardian",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMzMjZ2MLDMWGY2MMaimZmlZmZmxMzwAAAAAAmx2MAAAAoZWmlZmZAAsgZeAgFzgBsYZbAwMbwA",
+    imageUrl: "/talent-builds/드루이드-수호-단일-레이드.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "guardian",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYMzmZZGMWGYYGjmoZmZxMzMjxMMAAAAAgZsMDYZbmBjZbAMBAAAshZmBsYGMgFLbDwMDgB",
+    imageUrl: "/talent-builds/드루이드-수호-광역-레이드.png",
+  },
+
+  // ── 드루이드 / 회복 ────────────────────────────
+  {
+    classSlug: "druid",
+    specSlug: "restoration",
+    sectionSlug: "mythic-plus",
+    buildSlug: "wildstalker",
+    buildName: "야생추적자",
+    accentColor: "#5BA85B",
+    description: "",
+    importCode:
+      "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZ2mxMzY2GeAmZWGzitZAAAAAAAAAAwygmNDTzMGzYWMzMzYGGDAAAAAAAAAAAAgZbmtmlZWsxMzAmZB0MAAzMAMA",
+    imageUrl: "/talent-builds/드루이드-회복-야생추적자-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "restoration",
+    sectionSlug: "mythic-plus",
+    buildSlug: "keeper-of-the-grove",
+    buildName: "숲의 수호자",
+    accentColor: "#ACC844",
+    description: "",
+    importCode:
+      "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZbMjZmxsN8AMzsxsYbGAAAAAAAAAAsZoZbmx0MDwsYmZmhhZAAAAAYADwMgttxCmmZWGAAAALMmxwMzGoZAwMDAYA",
+    imageUrl: "/talent-builds/드루이드-회복-숲의수호자-쐐기.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "restoration",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGz2wDwMzixCDAAAAAAAAAAsBNbmx0MDMmlxMzMMMDAAAAADAYAAAAAAz2MLNbzsZjZm5BGmZgRzAAMzAwA",
+    imageUrl: "/talent-builds/드루이드-회복-단일-레이드.png",
+  },
+  {
+    classSlug: "druid",
+    specSlug: "restoration",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDYmZYswMAAAAAAAAAAYbQzmZMNzYgZZmZmZMDzMAAAAAAAAAAAAAmtZWa2mZzGjZGMzA0MAAzMAMA",
+    imageUrl: "/talent-builds/드루이드-회복-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
