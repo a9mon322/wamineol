@@ -103,7 +103,10 @@ export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
 };
 
 // spellId → 한국어. itemId가 없는 캐스팅 전용 마법부여용.
-export const ENCHANT_SPELL_TRANSLATIONS: Record<number, string> = {};
+export const ENCHANT_SPELL_TRANSLATIONS: Record<number, string> = {
+  53344: "타락한 성전사의 룬",
+  327082: "대재앙의 룬",
+};
 
 export const ENCHANT_BUILDS: EnchantBuild[] = [
   {
@@ -1652,6 +1655,159 @@ export const ENCHANT_BUILDS: EnchantBuild[] = [
         slot: "ring1",
         enchantName: "Enchant Ring - Nature's Fury",
         itemId: 243987,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "blood",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Rune of the Fallen Crusader",
+        spellId: 53344,
+        iconName: "spell_holy_blessingofstrength",
+        note: "죽음의기사 전용 룬조각",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Blessing of Speed",
+        itemId: 243981,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Akil'zon's Swiftness",
+        itemId: 243962,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Farstrider's Hunt",
+        itemId: 244008,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Silvermoon's Tenacity",
+        itemId: 244016,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "frost",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Rune of the Fallen Crusader",
+        spellId: 53344,
+        iconName: "spell_holy_blessingofstrength",
+        note: "죽음의기사 전용 룬조각",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Rune of Avoidance",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243990,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243957,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "unholy",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Rune of the Apocalypse",
+        spellId: 327082,
+        iconName: "spell_deathknight_thrash_ghoul",
+        note: "죽음의기사 전용 룬조각",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Rune of Avoidance",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243990,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244640,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243957,
         iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
         note: "양 반지 동일",
       },

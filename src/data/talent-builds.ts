@@ -1409,6 +1409,132 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CkGAAAAAAAAAAAAAAAAAAAAAAMjxMLz2MmZGz2wDYmZYswMAAAAAAAAAAYbQzmZMNzYgZZmZmZMDzMAAAAAAAAAAAAAmtZWa2mZzGjZGMzA0MAAzMAMA",
     imageUrl: "/talent-builds/드루이드-회복-광역-레이드.png",
   },
+
+  // ── 죽음의기사 / 혈기 ────────────────────────────
+  {
+    classSlug: "deathknight",
+    specSlug: "blood",
+    sectionSlug: "mythic-plus",
+    buildSlug: "deathbringer",
+    buildName: "죽음의 인도자",
+    accentColor: "#8B0000",
+    description: "",
+    importCode:
+      "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZxMzMmBAAAAwwMzMzMjZGjBAzMzMzAAAMmtBGwCYZYCMsAYGGAAmZAGMA",
+    imageUrl: "/talent-builds/죽음의기사-혈기-죽음의인도자-쐐기.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "blood",
+    sectionSlug: "mythic-plus",
+    buildSlug: "sanlayn",
+    buildName: "산레인",
+    accentColor: "#6B2D5C",
+    description: "",
+    importCode:
+      "CoPAAAAAAAAAAAAAAAAAAAAAAwMz2MzwMmZmhZbmZmmZxYMzMGAAAAwMmZmZmZ8AzYAAzMzMzAAAYgBmxiGLbA2GwGgZYAAAzMwwA",
+    imageUrl: "/talent-builds/죽음의기사-혈기-산레인-쐐기.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "blood",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjxMmBAAAAzMzMzMzMDzYMAYMzMzAAAYgBmxiGLbA2GwGgZYAAAzMwwA",
+    imageUrl: "/talent-builds/죽음의기사-혈기-단일-레이드.png",
+  },
+
+  // ── 죽음의기사 / 냉기 ────────────────────────────
+  {
+    classSlug: "deathknight",
+    specSlug: "frost",
+    sectionSlug: "mythic-plus",
+    buildSlug: "deathbringer",
+    buildName: "죽음의 인도자",
+    accentColor: "#8B0000",
+    description: "",
+    importCode:
+      "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMmZY2mZmZmZxMjmZMGDzMGPgZmZmZmZMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGAgB",
+    imageUrl: "/talent-builds/죽음의기사-냉기-죽음의인도자-쐐기.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "frost",
+    sectionSlug: "mythic-plus",
+    buildSlug: "rider-of-the-apocalypse",
+    buildName: "종말의 기수",
+    accentColor: "#F39C12",
+    description: "",
+    importCode:
+      "CsPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMzMbmZ0MjxwMzwwMmZmZmZmZAAAAAAAAAAsZ2MMwAzGDNshZmZmZgZAMAMzMDM",
+    imageUrl: "/talent-builds/죽음의기사-냉기-종말의기수-쐐기.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "frost",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMjZMGDz2MzMzMLzMjMjxMDzw4BMzgZmZmZAAAAAAAAAYMbDMgFwywEYsgZGzMDMDghZGAzgB",
+    imageUrl: "/talent-builds/죽음의기사-냉기-단일-레이드.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "frost",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMMjZGDz2MzMzMLzMjMjxYYGGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmAjFMzYmZgBghZGgxgB",
+    imageUrl: "/talent-builds/죽음의기사-냉기-광역-레이드.png",
+  },
+
+  // ── 죽음의기사 / 부정 ────────────────────────────
+  {
+    classSlug: "deathknight",
+    specSlug: "unholy",
+    sectionSlug: "mythic-plus",
+    buildSlug: "rider-of-the-apocalypse",
+    buildName: "종말의 기수",
+    accentColor: "#F39C12",
+    description: "",
+    importCode:
+      "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTzmZGzMjBAAAAAAAgZGDDAWmxMzmZGzMDYzsZYgBmNGasgBMDAjZmxMAzMzYMA",
+    imageUrl: "/talent-builds/죽음의기사-부정-종말의기수-쐐기.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "unholy",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CwPAAAAAAAAAAAAAAAAAAAAAAAYmZMjZAz2MzMTziZGzMjBAAAAAAAgZGmZAw2MmZ2mZGjZAbmFDDMwsxQjFAMDAjZmxMAzMzYMA",
+    imageUrl: "/talent-builds/죽음의기사-부정-단일-레이드.png",
+  },
+  {
+    classSlug: "deathknight",
+    specSlug: "unholy",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CwPAAAAAAAAAAAAAAAAAAAAAAAYmZMjxYY2mZmZa2MzYmZMAAAAAAAAMzwYAwyMmZ2MzYmZAbmFDDMwsxQjFMgZAYMzMmBYmZYMA",
+    imageUrl: "/talent-builds/죽음의기사-부정-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
