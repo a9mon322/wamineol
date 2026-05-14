@@ -1535,6 +1535,108 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CwPAAAAAAAAAAAAAAAAAAAAAAAYmZMjxYY2mZmZa2MzYmZMAAAAAAAAMzwYAwyMmZ2MzYmZAbmFDDMwsxQjFMgZAYMzMmBYmZYMA",
     imageUrl: "/talent-builds/죽음의기사-부정-광역-레이드.png",
   },
+
+  // ── 악마사냥꾼 / 파멸 ────────────────────────────
+  {
+    classSlug: "demonhunter",
+    specSlug: "havoc",
+    sectionSlug: "mythic-plus",
+    buildSlug: "felscarred",
+    buildName: "지옥상흔",
+    accentColor: "#1ABC9C",
+    description: "",
+    importCode:
+      "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2mxMzMGzkxMDAAAAAAY2MmtZYmBmx2sNzMjxALDsNbmxwsw0YmZMjNAAAgBAAAwMDGAAAAG",
+    imageUrl: "/talent-builds/악마사냥꾼-파멸-지옥상흔-쐐기.png",
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "havoc",
+    sectionSlug: "mythic-plus",
+    buildSlug: "aldrachi-reaver",
+    buildName: "알드라치 파괴자",
+    accentColor: "#E74C3C",
+    description: "",
+    importCode:
+      "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkhZAAAAAAAzmxsNGzMz2MzYZ28AzYbMMWmZbGMMW2YCjZGDLAAAADAAAMzAMAAAAM",
+    imageUrl: "/talent-builds/악마사냥꾼-파멸-알드라치파괴자-쐐기.png",
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "havoc",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxMzkxMDAAAAAAY2MmtZYmBPwM2mtZmZMGDLDsNLmxwsx0YmZMsBAAAAAAAwMDGAAAAG",
+    imageUrl: "/talent-builds/악마사냥꾼-파멸-단일-레이드.png",
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "havoc",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZ2MmZmZmZmMmZAAAAAAAzyDMmtBzMz2YGbz2YGGDjlB2mNzYY2YaMzMG2AAAAAAAAYmBDAAAAD",
+    imageUrl: "/talent-builds/악마사냥꾼-파멸-광역-레이드.png",
+  },
+
+  // ── 악마사냥꾼 / 복수 ────────────────────────────
+  {
+    classSlug: "demonhunter",
+    specSlug: "vengeance",
+    sectionSlug: "mythic-plus",
+    buildSlug: "annihilator",
+    buildName: "궤멸자",
+    accentColor: "#9B59B6",
+    description: "",
+    importCode:
+      "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMwiZMDmZMzYmZmZGDmtZGbzMz2YMDAAAAAAAAzMsBAAAgBmZmZmt2mZmBAAAAAYA",
+    imageUrl: "/talent-builds/악마사냥꾼-복수-궤멸자-쐐기.png",
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "vengeance",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMDziZmZgZMzYGzMzYYGzMWegZGjhBAAAAAAAgZmxGAAAAGMzMzMzWbzMzAADAAAgB",
+    imageUrl: "/talent-builds/악마사냥꾼-복수-단일-레이드.png",
+  },
+
+  // ── 악마사냥꾼 / 포식 ────────────────────────────
+  {
+    classSlug: "demonhunter",
+    specSlug: "predation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "annihilator",
+    buildName: "궤멸자",
+    accentColor: "#9B59B6",
+    description: "",
+    importCode:
+      "CgcBAAAAAAAAAAAAAAAAAAAAAAAWmxMzMzMzMGzMAAAAAAAMmlBDAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZml2mZmBwwAAwMGMmB",
+    imageUrl: "/talent-builds/악마사냥꾼-포식-궤멸자-쐐기.png",
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "predation",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 / 광역",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CgcBAAAAAAAAAAAAAAAAAAAAAAAWmxMzMzMzMGzMAAAAAAAMmlBDAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZml2mZmBwwAAwMGMmB",
+    imageUrl: "/talent-builds/악마사냥꾼-포식-단일-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(

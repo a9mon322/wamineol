@@ -100,6 +100,7 @@ export const ENCHANT_ITEM_TRANSLATIONS: Record<number, string> = {
   244015: "반지 마법부여 - 실버문의 기민함",
   243953: "장화 마법부여 - 스라소니의 기민함",
   243957: "반지 마법부여 - 독수리의 눈",
+  243963: "어깨보호구 마법부여 - 아킬존의 신속함",
 };
 
 // spellId → 한국어. itemId가 없는 캐스팅 전용 마법부여용.
@@ -1807,6 +1808,165 @@ export const ENCHANT_BUILDS: EnchantBuild[] = [
       {
         slot: "ring1",
         enchantName: "Enchant Ring - Eyes of the Eagle",
+        itemId: 243957,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "havoc",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Rendorei's Acuity",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+        note: "양손 글레이브 동일",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Reinforced Mass Evasion",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243991,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244641,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eye of the Eagle",
+        itemId: 243957,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "vengeance",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Rendorei's Acuity",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+        note: "양손 글레이브 동일",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Blessing of Speed",
+        itemId: 243981,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Akil'zon's Swiftness",
+        itemId: 243963,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244641,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Farstrider's Hunt",
+        itemId: 244009,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eye of the Eagle",
+        itemId: 243957,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "demonhunter",
+    specSlug: "predation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Arcane Mastery",
+        itemId: 244031,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+        note: "주무기",
+      },
+      {
+        slot: "weapon-offhand",
+        enchantName: "Enchant Weapon - Berserker's Fury",
+        itemId: 243973,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Reinforced Mass Evasion",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243991,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Forest Hunter's Armor Kit",
+        itemId: 244641,
+        iconName: "inv_12_profession_leatherworking_amani_armor_kit",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Eye of the Eagle",
         itemId: 243957,
         iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
         note: "양 반지 동일",
