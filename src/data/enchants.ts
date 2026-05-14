@@ -1973,6 +1973,156 @@ export const ENCHANT_BUILDS: EnchantBuild[] = [
       },
     ],
   },
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Rendorei's Acuity",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Reinforced Mass Evasion",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243991,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Sunflame Silken Spellthread",
+        itemId: 240133,
+        iconName: "inv_tailoring_spellthread_orange_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Nature's Fury",
+        itemId: 243987,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "augmentation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Rendorei's Acuity",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Reinforced Mass Evasion",
+        itemId: 244007,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Amirdrassil's Boon",
+        itemId: 243991,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Sunflame Silken Spellthread",
+        itemId: 240133,
+        iconName: "inv_tailoring_spellthread_orange_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Lynx's Agility",
+        itemId: 243953,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Nature's Fury",
+        itemId: 243987,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        slot: "weapon",
+        enchantName: "Enchant Weapon - Rendorei's Acuity",
+        itemId: 244029,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_purple",
+      },
+      {
+        slot: "helm",
+        enchantName: "Enchant Helm - Empowered Lifesteal",
+        itemId: 243951,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "shoulder",
+        enchantName: "Enchant Shoulders - Silvermoon's Healing",
+        itemId: 244021,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "chest",
+        enchantName: "Enchant Chest - Mark of the Worldsoul",
+        itemId: 243977,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "legs",
+        enchantName: "Arcaneknot Spellthread",
+        itemId: 240155,
+        iconName: "inv_12_tailoring_spellthread_violet_spellthread",
+      },
+      {
+        slot: "feet",
+        enchantName: "Enchant Boots - Roots of Shaladrassil",
+        itemId: 243983,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+      },
+      {
+        slot: "ring1",
+        enchantName: "Enchant Ring - Zul'jin's Mastery",
+        itemId: 243959,
+        iconName: "inv_12_profession_enchanting_enchantedvellum_blue",
+        note: "양 반지 동일",
+      },
+    ],
+  },
 ];
 
 export function getEnchantBuild(classSlug: string, specSlug: string) {

@@ -70,6 +70,8 @@ export const CONSUMABLE_TRANSLATIONS: Record<number, string> = {
   241302: "공허장막 용액",
   266996: "든든한 하란다르 기념상",
   242273: "만개하는 잔칫상",
+  266985: "든든한 실버문 대연회상",
+  243736: "여명의 기름",
 };
 
 // itemId → 등급. 등급별 색상 표시용. 등록 안 된 도핑은 기본값(rare)으로 처리.
@@ -98,6 +100,8 @@ export const CONSUMABLE_RARITY: Record<number, ItemRarity> = {
   241302: "common",   // Void-Veil Tincture
   266996: "rare",     // Hearty Harandar Celebration
   242273: "rare",     // Blooming Banquet
+  266985: "epic",     // Hearty Silvermoon Parade
+  243736: "uncommon", // Dawnlight Oil
 };
 
 export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
@@ -1882,6 +1886,153 @@ export const CONSUMABLE_BUILDS: ConsumableBuild[] = [
         itemName: "Thalassian Phoenix Oil",
         itemId: 243734,
         iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Sundered Sun",
+        itemId: 241326,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Potion of Recklessness",
+        itemId: 241288,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Quel'dorei Medley",
+        itemId: 242272,
+        iconName: "inv_cooking_10_draconicdelicacies",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "augmentation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Sundered Sun",
+        itemId: 241326,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Light's Potential",
+        itemId: 241308,
+        iconName: "inv_12_profession_alchemy_lightpotion_yellow",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Silvermoon Health Potion",
+        itemId: 241304,
+        iconName: "inv_12_profession_alchemy_lightpotion_orange",
+      },
+      {
+        category: "feast",
+        itemName: "Hearty Silvermoon Parade",
+        itemId: 266985,
+        iconName: "inv_tradeskill_cooking_feastofblood",
+      },
+      {
+        category: "food",
+        itemName: "Hearty Royal Roast",
+        itemId: 242747,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Thalassian Phoenix Oil",
+        itemId: 243734,
+        iconName: "inv_12_profession_enchanting_manaoil_red",
+      },
+      {
+        category: "augment-rune",
+        itemName: "Void-Touched Augment Rune",
+        itemId: 259085,
+        iconName: "inv_10_enchanting_crystal_color2",
+      },
+    ],
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    patchVersion: "12.0.5",
+    items: [
+      {
+        category: "flask",
+        itemName: "Flask of the Magisters",
+        itemId: 241322,
+        iconName: "inv_12_profession_alchemy_flask_sindoreipotion_black",
+      },
+      {
+        category: "combat-potion",
+        itemName: "Potion of Recklessness",
+        itemId: 241288,
+        iconName: "inv_12_profession_alchemy_voidpotion_red",
+      },
+      {
+        category: "healing-potion",
+        itemName: "Lightfused Mana Potion",
+        itemId: 241300,
+        iconName: "inv_12_profession_alchemy_lightpotion_blue",
+      },
+      {
+        category: "feast",
+        itemName: "Harandar Celebration",
+        itemId: 255846,
+        iconName: "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+      },
+      {
+        category: "food",
+        itemName: "Royal Roast",
+        itemId: 242275,
+        iconName: "inv_cooking_100_roastduck",
+      },
+      {
+        category: "weapon-oil",
+        itemName: "Dawnlight Oil",
+        itemId: 243736,
+        iconName: "inv_12_profession_enchanting_manaoil_orange",
       },
       {
         category: "augment-rune",

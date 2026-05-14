@@ -1637,6 +1637,144 @@ export const TALENT_BUILDS: TalentBuild[] = [
       "CgcBAAAAAAAAAAAAAAAAAAAAAAAWmxMzMzMzMGzMAAAAAAAMmlBDAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZml2mZmBwwAAwMGMmB",
     imageUrl: "/talent-builds/악마사냥꾼-포식-단일-레이드.png",
   },
+
+  // ── 기원사 / 황폐 ────────────────────────────
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "scalecommander",
+    buildName: "비늘사령관",
+    accentColor: "#C0392B",
+    description: "",
+    importCode:
+      "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDgZGmBmZGjZaGzMNDz2MmZmZmZmZGAzMGzMLjZgBGDWglxox2AYGA2wMYmBDD",
+    imageUrl: "/talent-builds/기원사-황폐-비늘사령관-쐐기.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "flameshaper",
+    buildName: "불꽃형성자",
+    accentColor: "#E67E22",
+    description: "",
+    importCode:
+      "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDmZMzYmhHwwYMTjZmJDMzMzMMPwMzMgZMmxMzyMzgZAjZgNwCYGmAbglhZAmZGG",
+    imageUrl: "/talent-builds/기원사-황폐-불꽃형성자-쐐기.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDYYGmBMYMTzMzMNjx2MmZmZmZmZGwMmZGzMLzMDMwYwCsMGN2GAzAwGGYmBDD",
+    imageUrl: "/talent-builds/기원사-황폐-단일-레이드.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "devastation",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzgZgBjZamZmpZM2mxMzMz8AzMzAmxMzYmZZmZgBGDWglxox2AYGA2wAzMYYA",
+    imageUrl: "/talent-builds/기원사-황폐-광역-레이드.png",
+  },
+
+  // ── 기원사 / 증강 ────────────────────────────
+  {
+    classSlug: "evoker",
+    specSlug: "augmentation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "scalecommander",
+    buildName: "비늘사령관",
+    accentColor: "#C0392B",
+    description: "",
+    importCode:
+      "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzgBzMLzYMMzGAAAAAAAAmBmZGjpGzMzAAAAAzMjxMz2YmBmZbGDWglxwYZAMDiNMzMYmBwA",
+    imageUrl: "/talent-builds/기원사-증강-비늘사령관-쐐기.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "augmentation",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmxyAzsMjxwMAAAAAAAAwMjHwMYM1MzMzAAAAgZMjxMz2YmBmZxAjZswCMwMM0ALYmxMDAM",
+    imageUrl: "/talent-builds/기원사-증강-단일-레이드.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "augmentation",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbjZmxyMYmlZMzMmBAAAAAAAAmBmBjpmZmZGAAAAMzMzMmZWGzMwMbGDWglxwYZAMDiNMGYmBwA",
+    imageUrl: "/talent-builds/기원사-증강-광역-레이드.png",
+  },
+
+  // ── 기원사 / 보존 ────────────────────────────
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "chronowarden",
+    buildName: "시간감시자",
+    accentColor: "#2980B9",
+    description: "",
+    importCode:
+      "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAegZmZ22GYYm5BmNzYM2GGAAYGzYGjhZiZmBAAAMzMTzwMjZZmZAAYMjNWgBmhhGGWgxMDwYA",
+    imageUrl: "/talent-builds/기원사-보존-시간감시자-쐐기.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    sectionSlug: "mythic-plus",
+    buildSlug: "flameshaper",
+    buildName: "불꽃형성자",
+    accentColor: "#E67E22",
+    description: "",
+    importCode:
+      "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2MwwMzDMbmxYsNMAAwMmxMYMzkZmZAAAAzMz0MMzYMmBAGzALgNwMMB2MsZYGgZGGA",
+    imageUrl: "/talent-builds/기원사-보존-불꽃형성자-쐐기.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    sectionSlug: "raid",
+    buildSlug: "single",
+    buildName: "단일 대상",
+    accentColor: RAID_SINGLE_COLOR,
+    description: "",
+    importCode:
+      "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MDGmZMbzwYmtZAAAmZmxMYMjwMAAAAzMjYmZmZ2mZGAMjZgNwCYGmAbG2MMAmZGD",
+    imageUrl: "/talent-builds/기원사-보존-단일-레이드.png",
+  },
+  {
+    classSlug: "evoker",
+    specSlug: "preservation",
+    sectionSlug: "raid",
+    buildSlug: "aoe",
+    buildName: "광역",
+    accentColor: RAID_AOE_COLOR,
+    description: "",
+    importCode:
+      "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZ2MDGmZMMmZmZZGAAgZMj5BMGzMhZGAAAwMzMZGzMmlZmBADMmxGLwAzwQDDLwYmBYMA",
+    imageUrl: "/talent-builds/기원사-보존-광역-레이드.png",
+  },
 ];
 
 export function getTalentBuilds(
