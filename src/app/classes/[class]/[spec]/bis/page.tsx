@@ -12,6 +12,7 @@ import {
   getWowheadIconUrl,
   getWowheadItemUrl,
 } from "@/data/bis-items";
+import { getStatPriority, STAT_COLORS } from "@/data/stat-priorities";
 import TrinketTabs from "./TrinketTabs";
 
 export function generateStaticParams() {
@@ -49,6 +50,8 @@ export default async function BisDetailPage({
 
   const build = getBisBuild(classSlug, specSlug);
   if (!build) notFound();
+
+  const statPriority = getStatPriority(classSlug, specSlug);
 
   const slotMap = new Map(build.items.map((i) => [i.slot, i]));
   const orderedItems = BIS_SLOT_ORDER.map((slot) => ({
@@ -104,6 +107,43 @@ export default async function BisDetailPage({
           한밤 시즌 {cls.name} {spec.name} 추천 장비 (장신구 제외 부위 + 쐐기/레이드 장신구 별도)
         </p>
       </header>
+
+      {statPriority && (
+        <section className="mb-6 rounded-lg border border-border bg-surface p-6">
+          <h2 className="mb-3 text-lg font-bold text-accent">2차 스탯 우선순위</h2>
+          <div className="space-y-4">
+            {statPriority.builds.map((b, idx) => (
+              <div key={idx}>
+                {b.heroTalentName && (
+                  <div className="mb-2 text-sm font-semibold text-foreground">
+                    {b.heroTalentName}
+                  </div>
+                )}
+                <div className="flex flex-wrap items-center gap-2">
+                  {b.priority.map((stat, i) => (
+                    <div key={stat} className="flex items-center gap-2">
+                      {i > 0 && <span className="text-muted">›</span>}
+                      <span
+                        className="rounded-md border px-2.5 py-1 text-sm font-semibold"
+                        style={{
+                          backgroundColor: `${STAT_COLORS[stat]}1a`,
+                          color: STAT_COLORS[stat],
+                          borderColor: `${STAT_COLORS[stat]}66`,
+                        }}
+                      >
+                        {stat}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                {b.note && (
+                  <p className="mt-2 text-xs text-muted">{b.note}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mb-10 rounded-lg border border-border bg-surface p-6">
         <h2 className="mb-4 text-lg font-bold text-accent">부위별 추천 장비</h2>
